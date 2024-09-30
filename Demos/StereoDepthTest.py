@@ -2,12 +2,15 @@ import numpy as np
 import cv2 as cv
 from matplotlib import pyplot as plt
 
+# Load images
 imgL = cv.imread("C:\\Users\\dougr\\OneDrive\\Desktop\\Bicycle1-perfect\\im0.png", cv.IMREAD_GRAYSCALE)
 imgR = cv.imread("C:\\Users\\dougr\\OneDrive\\Desktop\\Bicycle1-perfect\\im1.png", cv.IMREAD_GRAYSCALE)
 
+# Nothing function
 def nothing(x):
     pass
 
+# Create window for changing stereo settings
 cv.namedWindow('disp', cv.WINDOW_NORMAL)
 cv.resizeWindow('disp', 600, 600)
 
@@ -23,10 +26,13 @@ cv.createTrackbar('speckleWindowSize', 'disp', 3, 25, nothing)
 cv.createTrackbar('disp12MaxDiff', 'disp', 5, 25, nothing)
 cv.createTrackbar('minDisparity', 'disp', 5, 25, nothing)
 
+# Create the image matching system
 stereo = cv.StereoBM.create()
 
+# Event loop for updating disparity map using slider parameters from window
 while True:
 
+    # Get the values from each slider
     numDisparities = cv.getTrackbarPos('numDisparities', 'disp') * 16
     blockSize = cv.getTrackbarPos('blockSize', 'disp') * 2 + 5
     preFilterType = cv.getTrackbarPos('preFilterType', 'disp')
@@ -52,6 +58,7 @@ while True:
     stereo.setDisp12MaxDiff(disp12MaxDiff)
     stereo.setMinDisparity(minDisparity)
 
+    # Compute the disparity map
     disparity = stereo.compute(imgL, imgR)
 
     disparity = disparity.astype(np.float32)
