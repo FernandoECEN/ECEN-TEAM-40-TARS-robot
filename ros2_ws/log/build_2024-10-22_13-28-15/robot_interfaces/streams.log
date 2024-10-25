@@ -1,0 +1,28 @@
+[0.011s] Invoking command in '/home/drymer/ros2_ws/build/robot_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/drymer/ros2_ws/src/robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/drymer/ros2_ws/install/robot_interfaces
+[0.343s] -- The C compiler identification is GNU 11.4.0
+[1.174s] -- The CXX compiler identification is GNU 11.4.0
+[1.662s] -- Detecting C compiler ABI info
+[1.878s] -- Detecting C compiler ABI info - done
+[1.889s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.890s] -- Detecting C compile features
+[1.891s] -- Detecting C compile features - done
+[1.897s] -- Detecting CXX compiler ABI info
+[2.186s] -- Detecting CXX compiler ABI info - done
+[2.197s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.197s] -- Detecting CXX compile features
+[2.198s] -- Detecting CXX compile features - done
+[2.213s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.411s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.550s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.617s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:53 (message):
+[2.618s]   ament_package_xml() package name 'robot_interfaces' in '/package.xml' does
+[2.618s]   not match current PROJECT_NAME 'tutorial_interfaces'.  You must call
+[2.618s]   project() with the same package name before.
+[2.618s] Call Stack (most recent call first):
+[2.618s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[2.618s]   CMakeLists.txt:23 (ament_lint_auto_find_test_dependencies)
+[2.618s] 
+[2.618s] [0m
+[2.618s] -- Configuring incomplete, errors occurred!
+[2.618s] See also "/home/drymer/ros2_ws/build/robot_interfaces/CMakeFiles/CMakeOutput.log".
+[2.622s] Invoked command in '/home/drymer/ros2_ws/build/robot_interfaces' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/drymer/ros2_ws/src/robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/drymer/ros2_ws/install/robot_interfaces

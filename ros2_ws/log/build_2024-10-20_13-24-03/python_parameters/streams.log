@@ -1,0 +1,38 @@
+[0.727s] Invoking command in '/home/drymer/ros2_ws/src/python_parameters': PYTHONPATH=/home/drymer/ros2_ws/build/python_parameters/prefix_override:/home/drymer/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/drymer/ros2_ws/install/python_parameters/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/python_parameters build --build-base /home/drymer/ros2_ws/build/python_parameters/build install --record /home/drymer/ros2_ws/build/python_parameters/install.log --single-version-externally-managed install_data
+[0.943s] running egg_info
+[0.944s] creating ../../build/python_parameters/python_parameters.egg-info
+[0.946s] writing ../../build/python_parameters/python_parameters.egg-info/PKG-INFO
+[0.947s] writing dependency_links to ../../build/python_parameters/python_parameters.egg-info/dependency_links.txt
+[0.947s] writing entry points to ../../build/python_parameters/python_parameters.egg-info/entry_points.txt
+[0.947s] writing requirements to ../../build/python_parameters/python_parameters.egg-info/requires.txt
+[0.947s] writing top-level names to ../../build/python_parameters/python_parameters.egg-info/top_level.txt
+[0.947s] writing manifest file '../../build/python_parameters/python_parameters.egg-info/SOURCES.txt'
+[0.949s] reading manifest file '../../build/python_parameters/python_parameters.egg-info/SOURCES.txt'
+[0.949s] adding license file 'LICENSE'
+[0.949s] writing manifest file '../../build/python_parameters/python_parameters.egg-info/SOURCES.txt'
+[0.950s] running build
+[0.950s] running build_py
+[0.950s] creating /home/drymer/ros2_ws/build/python_parameters/build
+[0.950s] creating /home/drymer/ros2_ws/build/python_parameters/build/lib
+[0.950s] creating /home/drymer/ros2_ws/build/python_parameters/build/lib/python_parameters
+[0.952s] copying python_parameters/__init__.py -> /home/drymer/ros2_ws/build/python_parameters/build/lib/python_parameters
+[0.952s] copying python_parameters/python_parameters_node.py -> /home/drymer/ros2_ws/build/python_parameters/build/lib/python_parameters
+[0.952s] running install
+[0.952s] running install_lib
+[0.953s] creating /home/drymer/ros2_ws/install/python_parameters/lib/python3.10/site-packages/python_parameters
+[0.953s] copying /home/drymer/ros2_ws/build/python_parameters/build/lib/python_parameters/__init__.py -> /home/drymer/ros2_ws/install/python_parameters/lib/python3.10/site-packages/python_parameters
+[0.953s] copying /home/drymer/ros2_ws/build/python_parameters/build/lib/python_parameters/python_parameters_node.py -> /home/drymer/ros2_ws/install/python_parameters/lib/python3.10/site-packages/python_parameters
+[0.953s] byte-compiling /home/drymer/ros2_ws/install/python_parameters/lib/python3.10/site-packages/python_parameters/__init__.py to __init__.cpython-310.pyc
+[0.954s] byte-compiling /home/drymer/ros2_ws/install/python_parameters/lib/python3.10/site-packages/python_parameters/python_parameters_node.py to python_parameters_node.cpython-310.pyc
+[0.954s] running install_data
+[0.954s] creating /home/drymer/ros2_ws/install/python_parameters/share/ament_index
+[0.955s] creating /home/drymer/ros2_ws/install/python_parameters/share/ament_index/resource_index
+[0.955s] creating /home/drymer/ros2_ws/install/python_parameters/share/ament_index/resource_index/packages
+[0.955s] copying resource/python_parameters -> /home/drymer/ros2_ws/install/python_parameters/share/ament_index/resource_index/packages
+[0.956s] copying package.xml -> /home/drymer/ros2_ws/install/python_parameters/share/python_parameters
+[0.956s] running install_egg_info
+[0.958s] Copying ../../build/python_parameters/python_parameters.egg-info to /home/drymer/ros2_ws/install/python_parameters/lib/python3.10/site-packages/python_parameters-0.0.0-py3.10.egg-info
+[0.959s] running install_scripts
+[0.976s] Installing minimal_param_node script to /home/drymer/ros2_ws/install/python_parameters/lib/python_parameters
+[0.977s] writing list of installed files to '/home/drymer/ros2_ws/build/python_parameters/install.log'
+[0.994s] Invoked command in '/home/drymer/ros2_ws/src/python_parameters' returned '0': PYTHONPATH=/home/drymer/ros2_ws/build/python_parameters/prefix_override:/home/drymer/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/drymer/ros2_ws/install/python_parameters/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/python_parameters build --build-base /home/drymer/ros2_ws/build/python_parameters/build install --record /home/drymer/ros2_ws/build/python_parameters/install.log --single-version-externally-managed install_data

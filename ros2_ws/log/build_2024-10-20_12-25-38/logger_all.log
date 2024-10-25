@@ -1,0 +1,219 @@
+[0.280s] DEBUG:colcon:Command line arguments: ['/home/drymer/.local/bin/colcon', 'build', '--packages-select', 'tutorial_interfaces']
+[0.280s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['tutorial_interfaces'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f926fd01c00>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f926fd016f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f926fd016f0>>)
+[0.516s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.516s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.516s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.516s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.517s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.517s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.517s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/drymer/ros2_ws'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extensions ['ignore', 'ignore_ament_install']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extension 'ignore'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extension 'ignore_ament_install'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extensions ['colcon_pkg']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extension 'colcon_pkg'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extensions ['colcon_meta']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extension 'colcon_meta'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extensions ['ros']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extension 'ros'
+[0.532s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_package' with type 'ros.ament_python' and name 'my_package'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extensions ['ignore', 'ignore_ament_install']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'ignore'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'ignore_ament_install'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extensions ['colcon_pkg']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'colcon_pkg'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extensions ['colcon_meta']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'colcon_meta'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extensions ['ros']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'ros'
+[0.533s] DEBUG:colcon.colcon_core.package_identification:Package 'src/py_pubsub' with type 'ros.ament_python' and name 'py_pubsub'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extensions ['ignore', 'ignore_ament_install']
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extension 'ignore'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extension 'ignore_ament_install'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extensions ['colcon_pkg']
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extension 'colcon_pkg'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extensions ['colcon_meta']
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extension 'colcon_meta'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extensions ['ros']
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extension 'ros'
+[0.534s] DEBUG:colcon.colcon_core.package_identification:Package 'src/py_srvcli' with type 'ros.ament_python' and name 'py_srvcli'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extensions ['ignore', 'ignore_ament_install']
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'ignore'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'ignore_ament_install'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extensions ['colcon_pkg']
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'colcon_pkg'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extensions ['colcon_meta']
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'colcon_meta'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extensions ['ros']
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'ros'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extensions ['cmake', 'python']
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'cmake'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'python'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extensions ['python_setup_py']
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'python_setup_py'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/ros_tutorials) by extensions ['ignore', 'ignore_ament_install']
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/ros_tutorials) by extension 'ignore'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/ros_tutorials) ignored
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/roscpp_tutorials) by extensions ['ignore', 'ignore_ament_install']
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/roscpp_tutorials) by extension 'ignore'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/roscpp_tutorials) ignored
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/rospy_tutorials) by extensions ['ignore', 'ignore_ament_install']
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/rospy_tutorials) by extension 'ignore'
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/rospy_tutorials) ignored
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extensions ['ignore', 'ignore_ament_install']
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extension 'ignore'
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extension 'ignore_ament_install'
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extensions ['colcon_pkg']
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extension 'colcon_pkg'
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extensions ['colcon_meta']
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extension 'colcon_meta'
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extensions ['ros']
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extension 'ros'
+[0.538s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_tutorials/turtlesim' with type 'ros.ament_cmake' and name 'turtlesim'
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extension 'ignore'
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extension 'ignore_ament_install'
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extensions ['colcon_pkg']
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extension 'colcon_pkg'
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extensions ['colcon_meta']
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extension 'colcon_meta'
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extensions ['ros']
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extension 'ros'
+[0.539s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tutorial_interfaces' with type 'ros.ament_cmake' and name 'tutorial_interfaces'
+[0.539s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.540s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.540s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.540s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.540s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.566s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'my_package' in 'src/my_package'
+[0.566s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'py_pubsub' in 'src/py_pubsub'
+[0.566s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'py_srvcli' in 'src/py_srvcli'
+[0.566s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'turtlesim' in 'src/ros_tutorials/turtlesim'
+[0.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.571s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 293 installed packages in /opt/ros/humble
+[0.572s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.616s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.616s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.616s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.616s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.616s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.616s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.616s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.616s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.616s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.617s] DEBUG:colcon.colcon_core.verb:Building package 'tutorial_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/drymer/ros2_ws/build/tutorial_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/drymer/ros2_ws/install/tutorial_interfaces', 'merge_install': False, 'path': '/home/drymer/ros2_ws/src/tutorial_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.617s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.618s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.618s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/drymer/ros2_ws/src/tutorial_interfaces' with build type 'ament_cmake'
+[0.618s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/drymer/ros2_ws/src/tutorial_interfaces'
+[0.624s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.624s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.624s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.632s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/drymer/ros2_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/drymer/ros2_ws/src/tutorial_interfaces -DCMAKE_INSTALL_PREFIX=/home/drymer/ros2_ws/install/tutorial_interfaces
+[4.363s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/drymer/ros2_ws/build/tutorial_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/drymer/ros2_ws/src/tutorial_interfaces -DCMAKE_INSTALL_PREFIX=/home/drymer/ros2_ws/install/tutorial_interfaces
+[4.364s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/drymer/ros2_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/drymer/ros2_ws/build/tutorial_interfaces -- -j12 -l12
+[7.623s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/drymer/ros2_ws/build/tutorial_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/drymer/ros2_ws/build/tutorial_interfaces -- -j12 -l12
+[7.720s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/drymer/ros2_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/drymer/ros2_ws/build/tutorial_interfaces
+[7.794s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tutorial_interfaces)
+[7.794s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/drymer/ros2_ws/build/tutorial_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/drymer/ros2_ws/build/tutorial_interfaces
+[7.800s] Level 1:colcon.colcon_core.environment:checking '/home/drymer/ros2_ws/install/tutorial_interfaces' for CMake module files
+[7.800s] Level 1:colcon.colcon_core.environment:checking '/home/drymer/ros2_ws/install/tutorial_interfaces' for CMake config files
+[7.800s] Level 1:colcon.colcon_core.shell:create_environment_hook('tutorial_interfaces', 'cmake_prefix_path')
+[7.801s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/cmake_prefix_path.ps1'
+[7.802s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/cmake_prefix_path.dsv'
+[7.802s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/cmake_prefix_path.sh'
+[7.803s] Level 1:colcon.colcon_core.environment:checking '/home/drymer/ros2_ws/install/tutorial_interfaces/lib'
+[7.804s] Level 1:colcon.colcon_core.shell:create_environment_hook('tutorial_interfaces', 'ld_library_path_lib')
+[7.804s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/ld_library_path_lib.ps1'
+[7.804s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/ld_library_path_lib.dsv'
+[7.804s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/ld_library_path_lib.sh'
+[7.805s] Level 1:colcon.colcon_core.environment:checking '/home/drymer/ros2_ws/install/tutorial_interfaces/bin'
+[7.805s] Level 1:colcon.colcon_core.environment:checking '/home/drymer/ros2_ws/install/tutorial_interfaces/lib/pkgconfig/tutorial_interfaces.pc'
+[7.805s] Level 1:colcon.colcon_core.environment:checking '/home/drymer/ros2_ws/install/tutorial_interfaces/lib/python3.10/site-packages'
+[7.805s] Level 1:colcon.colcon_core.environment:checking '/home/drymer/ros2_ws/install/tutorial_interfaces/bin'
+[7.806s] INFO:colcon.colcon_core.shell:Creating package script '/home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.ps1'
+[7.807s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.dsv'
+[7.807s] INFO:colcon.colcon_core.shell:Creating package script '/home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.sh'
+[7.808s] INFO:colcon.colcon_core.shell:Creating package script '/home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.bash'
+[7.809s] INFO:colcon.colcon_core.shell:Creating package script '/home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.zsh'
+[7.810s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/drymer/ros2_ws/install/tutorial_interfaces/share/colcon-core/packages/tutorial_interfaces)
+[7.899s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tutorial_interfaces)
+[7.900s] Level 1:colcon.colcon_core.environment:checking '/home/drymer/ros2_ws/install/tutorial_interfaces' for CMake module files
+[7.900s] Level 1:colcon.colcon_core.environment:checking '/home/drymer/ros2_ws/install/tutorial_interfaces' for CMake config files
+[7.900s] Level 1:colcon.colcon_core.shell:create_environment_hook('tutorial_interfaces', 'cmake_prefix_path')
+[7.901s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/cmake_prefix_path.ps1'
+[7.901s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/cmake_prefix_path.dsv'
+[7.901s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/cmake_prefix_path.sh'
+[7.902s] Level 1:colcon.colcon_core.environment:checking '/home/drymer/ros2_ws/install/tutorial_interfaces/lib'
+[7.902s] Level 1:colcon.colcon_core.shell:create_environment_hook('tutorial_interfaces', 'ld_library_path_lib')
+[7.902s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/ld_library_path_lib.ps1'
+[7.902s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/ld_library_path_lib.dsv'
+[7.903s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/ld_library_path_lib.sh'
+[7.903s] Level 1:colcon.colcon_core.environment:checking '/home/drymer/ros2_ws/install/tutorial_interfaces/bin'
+[7.903s] Level 1:colcon.colcon_core.environment:checking '/home/drymer/ros2_ws/install/tutorial_interfaces/lib/pkgconfig/tutorial_interfaces.pc'
+[7.903s] Level 1:colcon.colcon_core.environment:checking '/home/drymer/ros2_ws/install/tutorial_interfaces/lib/python3.10/site-packages'
+[7.904s] Level 1:colcon.colcon_core.environment:checking '/home/drymer/ros2_ws/install/tutorial_interfaces/bin'
+[7.904s] INFO:colcon.colcon_core.shell:Creating package script '/home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.ps1'
+[7.904s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.dsv'
+[7.905s] INFO:colcon.colcon_core.shell:Creating package script '/home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.sh'
+[7.905s] INFO:colcon.colcon_core.shell:Creating package script '/home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.bash'
+[7.906s] INFO:colcon.colcon_core.shell:Creating package script '/home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.zsh'
+[7.906s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/drymer/ros2_ws/install/tutorial_interfaces/share/colcon-core/packages/tutorial_interfaces)
+[7.906s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.906s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.906s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.906s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.964s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[7.965s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.965s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.965s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.965s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[7.965s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.965s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/drymer/ros2_ws/install/local_setup.ps1'
+[7.966s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/drymer/ros2_ws/install/_local_setup_util_ps1.py'
+[7.968s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/drymer/ros2_ws/install/setup.ps1'
+[7.969s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/drymer/ros2_ws/install/local_setup.sh'
+[7.970s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/drymer/ros2_ws/install/_local_setup_util_sh.py'
+[7.970s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/drymer/ros2_ws/install/setup.sh'
+[7.972s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/drymer/ros2_ws/install/local_setup.bash'
+[7.972s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/drymer/ros2_ws/install/setup.bash'
+[7.973s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/drymer/ros2_ws/install/local_setup.zsh'
+[7.974s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/drymer/ros2_ws/install/setup.zsh'

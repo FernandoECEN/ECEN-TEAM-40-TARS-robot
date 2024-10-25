@@ -1,0 +1,41 @@
+[0.964s] Invoking command in '/home/drymer/ros2_ws/src/py_robottest': AMENT_PREFIX_PATH=/home/drymer/ros2_ws/install/robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/drymer/ros2_ws/install/robot_interfaces LD_LIBRARY_PATH=/home/drymer/ros2_ws/install/robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/drymer/ros2_ws/build/py_robottest/prefix_override:/home/drymer/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/drymer/ros2_ws/install/py_robottest/lib/python3.10/site-packages:/home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/py_robottest build --build-base /home/drymer/ros2_ws/build/py_robottest/build install --record /home/drymer/ros2_ws/build/py_robottest/install.log --single-version-externally-managed install_data
+[1.190s] running egg_info
+[1.190s] creating ../../build/py_robottest/py_robottest.egg-info
+[1.190s] writing ../../build/py_robottest/py_robottest.egg-info/PKG-INFO
+[1.191s] writing dependency_links to ../../build/py_robottest/py_robottest.egg-info/dependency_links.txt
+[1.191s] writing entry points to ../../build/py_robottest/py_robottest.egg-info/entry_points.txt
+[1.191s] writing requirements to ../../build/py_robottest/py_robottest.egg-info/requires.txt
+[1.191s] writing top-level names to ../../build/py_robottest/py_robottest.egg-info/top_level.txt
+[1.191s] writing manifest file '../../build/py_robottest/py_robottest.egg-info/SOURCES.txt'
+[1.192s] reading manifest file '../../build/py_robottest/py_robottest.egg-info/SOURCES.txt'
+[1.193s] writing manifest file '../../build/py_robottest/py_robottest.egg-info/SOURCES.txt'
+[1.193s] running build
+[1.193s] running build_py
+[1.194s] creating /home/drymer/ros2_ws/build/py_robottest/build
+[1.194s] creating /home/drymer/ros2_ws/build/py_robottest/build/lib
+[1.194s] creating /home/drymer/ros2_ws/build/py_robottest/build/lib/py_robottest
+[1.194s] copying py_robottest/__init__.py -> /home/drymer/ros2_ws/build/py_robottest/build/lib/py_robottest
+[1.194s] copying py_robottest/motor_publisher.py -> /home/drymer/ros2_ws/build/py_robottest/build/lib/py_robottest
+[1.194s] copying py_robottest/motor_subscriber.py -> /home/drymer/ros2_ws/build/py_robottest/build/lib/py_robottest
+[1.195s] running install
+[1.195s] running install_lib
+[1.195s] creating /home/drymer/ros2_ws/install/py_robottest/lib/python3.10/site-packages/py_robottest
+[1.195s] copying /home/drymer/ros2_ws/build/py_robottest/build/lib/py_robottest/__init__.py -> /home/drymer/ros2_ws/install/py_robottest/lib/python3.10/site-packages/py_robottest
+[1.196s] copying /home/drymer/ros2_ws/build/py_robottest/build/lib/py_robottest/motor_publisher.py -> /home/drymer/ros2_ws/install/py_robottest/lib/python3.10/site-packages/py_robottest
+[1.196s] copying /home/drymer/ros2_ws/build/py_robottest/build/lib/py_robottest/motor_subscriber.py -> /home/drymer/ros2_ws/install/py_robottest/lib/python3.10/site-packages/py_robottest
+[1.196s] byte-compiling /home/drymer/ros2_ws/install/py_robottest/lib/python3.10/site-packages/py_robottest/__init__.py to __init__.cpython-310.pyc
+[1.196s] byte-compiling /home/drymer/ros2_ws/install/py_robottest/lib/python3.10/site-packages/py_robottest/motor_publisher.py to motor_publisher.cpython-310.pyc
+[1.197s] byte-compiling /home/drymer/ros2_ws/install/py_robottest/lib/python3.10/site-packages/py_robottest/motor_subscriber.py to motor_subscriber.cpython-310.pyc
+[1.197s] running install_data
+[1.197s] creating /home/drymer/ros2_ws/install/py_robottest/share/ament_index
+[1.197s] creating /home/drymer/ros2_ws/install/py_robottest/share/ament_index/resource_index
+[1.198s] creating /home/drymer/ros2_ws/install/py_robottest/share/ament_index/resource_index/packages
+[1.198s] copying resource/py_robottest -> /home/drymer/ros2_ws/install/py_robottest/share/ament_index/resource_index/packages
+[1.198s] copying package.xml -> /home/drymer/ros2_ws/install/py_robottest/share/py_robottest
+[1.198s] running install_egg_info
+[1.200s] Copying ../../build/py_robottest/py_robottest.egg-info to /home/drymer/ros2_ws/install/py_robottest/lib/python3.10/site-packages/py_robottest-0.0.0-py3.10.egg-info
+[1.201s] running install_scripts
+[1.218s] Installing listener script to /home/drymer/ros2_ws/install/py_robottest/lib/py_robottest
+[1.219s] Installing talker script to /home/drymer/ros2_ws/install/py_robottest/lib/py_robottest
+[1.219s] writing list of installed files to '/home/drymer/ros2_ws/build/py_robottest/install.log'
+[1.237s] Invoked command in '/home/drymer/ros2_ws/src/py_robottest' returned '0': AMENT_PREFIX_PATH=/home/drymer/ros2_ws/install/robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/drymer/ros2_ws/install/robot_interfaces LD_LIBRARY_PATH=/home/drymer/ros2_ws/install/robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/drymer/ros2_ws/build/py_robottest/prefix_override:/home/drymer/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/drymer/ros2_ws/install/py_robottest/lib/python3.10/site-packages:/home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/py_robottest build --build-base /home/drymer/ros2_ws/build/py_robottest/build install --record /home/drymer/ros2_ws/build/py_robottest/install.log --single-version-externally-managed install_data

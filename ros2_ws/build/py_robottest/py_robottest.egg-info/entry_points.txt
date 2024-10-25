@@ -1,0 +1,4 @@
+[console_scripts]
+listener = py_robottest.motor_subscriber:main
+talker = py_robottest.motor_publisher:main
+

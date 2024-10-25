@@ -1,0 +1,41 @@
+[0.922s] Invoking command in '/home/drymer/ros2_ws/src/robot_system': AMENT_PREFIX_PATH=/home/drymer/ros2_ws/install/robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/drymer/ros2_ws/install/robot_interfaces LD_LIBRARY_PATH=/home/drymer/ros2_ws/install/robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/drymer/ros2_ws/build/robot_system/prefix_override:/home/drymer/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/drymer/ros2_ws/install/robot_system/lib/python3.10/site-packages:/home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_system build --build-base /home/drymer/ros2_ws/build/robot_system/build install --record /home/drymer/ros2_ws/build/robot_system/install.log --single-version-externally-managed install_data
+[1.126s] running egg_info
+[1.127s] creating ../../build/robot_system/robot_system.egg-info
+[1.127s] writing ../../build/robot_system/robot_system.egg-info/PKG-INFO
+[1.127s] writing dependency_links to ../../build/robot_system/robot_system.egg-info/dependency_links.txt
+[1.128s] writing entry points to ../../build/robot_system/robot_system.egg-info/entry_points.txt
+[1.128s] writing requirements to ../../build/robot_system/robot_system.egg-info/requires.txt
+[1.128s] writing top-level names to ../../build/robot_system/robot_system.egg-info/top_level.txt
+[1.128s] writing manifest file '../../build/robot_system/robot_system.egg-info/SOURCES.txt'
+[1.130s] reading manifest file '../../build/robot_system/robot_system.egg-info/SOURCES.txt'
+[1.131s] writing manifest file '../../build/robot_system/robot_system.egg-info/SOURCES.txt'
+[1.131s] running build
+[1.131s] running build_py
+[1.132s] creating /home/drymer/ros2_ws/build/robot_system/build
+[1.132s] creating /home/drymer/ros2_ws/build/robot_system/build/lib
+[1.132s] creating /home/drymer/ros2_ws/build/robot_system/build/lib/robot_system
+[1.133s] copying robot_system/__init__.py -> /home/drymer/ros2_ws/build/robot_system/build/lib/robot_system
+[1.133s] copying robot_system/motor_control_server.py -> /home/drymer/ros2_ws/build/robot_system/build/lib/robot_system
+[1.133s] copying robot_system/motor_control_client.py -> /home/drymer/ros2_ws/build/robot_system/build/lib/robot_system
+[1.133s] running install
+[1.133s] running install_lib
+[1.134s] creating /home/drymer/ros2_ws/install/robot_system/lib/python3.10/site-packages/robot_system
+[1.135s] copying /home/drymer/ros2_ws/build/robot_system/build/lib/robot_system/__init__.py -> /home/drymer/ros2_ws/install/robot_system/lib/python3.10/site-packages/robot_system
+[1.135s] copying /home/drymer/ros2_ws/build/robot_system/build/lib/robot_system/motor_control_server.py -> /home/drymer/ros2_ws/install/robot_system/lib/python3.10/site-packages/robot_system
+[1.135s] copying /home/drymer/ros2_ws/build/robot_system/build/lib/robot_system/motor_control_client.py -> /home/drymer/ros2_ws/install/robot_system/lib/python3.10/site-packages/robot_system
+[1.135s] byte-compiling /home/drymer/ros2_ws/install/robot_system/lib/python3.10/site-packages/robot_system/__init__.py to __init__.cpython-310.pyc
+[1.135s] byte-compiling /home/drymer/ros2_ws/install/robot_system/lib/python3.10/site-packages/robot_system/motor_control_server.py to motor_control_server.cpython-310.pyc
+[1.136s] byte-compiling /home/drymer/ros2_ws/install/robot_system/lib/python3.10/site-packages/robot_system/motor_control_client.py to motor_control_client.cpython-310.pyc
+[1.136s] running install_data
+[1.136s] creating /home/drymer/ros2_ws/install/robot_system/share/ament_index
+[1.137s] creating /home/drymer/ros2_ws/install/robot_system/share/ament_index/resource_index
+[1.137s] creating /home/drymer/ros2_ws/install/robot_system/share/ament_index/resource_index/packages
+[1.137s] copying resource/robot_system -> /home/drymer/ros2_ws/install/robot_system/share/ament_index/resource_index/packages
+[1.138s] copying package.xml -> /home/drymer/ros2_ws/install/robot_system/share/robot_system
+[1.138s] running install_egg_info
+[1.139s] Copying ../../build/robot_system/robot_system.egg-info to /home/drymer/ros2_ws/install/robot_system/lib/python3.10/site-packages/robot_system-0.0.0-py3.10.egg-info
+[1.140s] running install_scripts
+[1.156s] Installing action script to /home/drymer/ros2_ws/install/robot_system/lib/robot_system
+[1.157s] Installing client script to /home/drymer/ros2_ws/install/robot_system/lib/robot_system
+[1.157s] writing list of installed files to '/home/drymer/ros2_ws/build/robot_system/install.log'
+[1.174s] Invoked command in '/home/drymer/ros2_ws/src/robot_system' returned '0': AMENT_PREFIX_PATH=/home/drymer/ros2_ws/install/robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/drymer/ros2_ws/install/robot_interfaces LD_LIBRARY_PATH=/home/drymer/ros2_ws/install/robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/drymer/ros2_ws/build/robot_system/prefix_override:/home/drymer/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/drymer/ros2_ws/install/robot_system/lib/python3.10/site-packages:/home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_system build --build-base /home/drymer/ros2_ws/build/robot_system/build install --record /home/drymer/ros2_ws/build/robot_system/install.log --single-version-externally-managed install_data

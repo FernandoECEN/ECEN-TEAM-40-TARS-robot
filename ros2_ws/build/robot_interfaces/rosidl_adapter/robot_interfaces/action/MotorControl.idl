@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from robot_interfaces/action/MotorControl.action
+// generated code does not contain a copyright notice
+
+
+module robot_interfaces {
+  module action {
+    struct MotorControl_Goal {
+      int32 moveorder;
+    };
+    struct MotorControl_Result {
+      int32 exitcode;
+    };
+    struct MotorControl_Feedback {
+      int32 motor1pos;
+
+      int32 motor2pos;
+    };
+  };
+};

@@ -1,0 +1,231 @@
+[0.050s] Invoking command in '/home/drymer/ros2_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/drymer/launch_ws/install/launch_tutorial:/home/drymer/launch_ws/install/py_launch_example:/home/drymer/launch_ws/src/install/py_launch_example:/home/drymer/ros2_ws/install/python_parameters:/home/drymer/ros2_ws/install/py_pubsub:/home/drymer/ros2_ws/install/py_srvcli:/home/drymer/ros2_ws/install/my_package:/opt/ros/humble /usr/bin/cmake --build /home/drymer/ros2_ws/build/tutorial_interfaces -- -j12 -l12
+[0.706s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.708s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.708s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.708s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.708s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.708s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.708s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.728s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.798s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.126s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.058s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.369s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.397s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.426s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.426s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.426s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.476s] -- Added test 'lint_cmake' to check CMake code style
+[2.478s] -- Added test 'xmllint' to check XML markup files
+[2.489s] -- Configuring done
+[2.564s] -- Generating done
+[2.567s] -- Build files have been written to: /home/drymer/ros2_ws/build/tutorial_interfaces
+[2.593s] [35m[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_generator_c[0m
+[2.604s] [ 10%] Built target tutorial_interfaces__rosidl_generator_c
+[2.604s] [ 12%] Built target tutorial_interfaces__cpp
+[2.616s] [35m[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_c[0m
+[2.616s] [35m[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_introspection_cpp[0m
+[2.617s] [ 12%] Built target ament_cmake_python_copy_tutorial_interfaces
+[2.618s] [35m[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_introspection_c[0m
+[2.618s] [35m[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_fastrtps_c[0m
+[2.630s] [ 23%] Built target tutorial_interfaces__rosidl_typesupport_c
+[2.631s] [35m[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[2.632s] [35m[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_cpp[0m
+[2.636s] [ 34%] Built target tutorial_interfaces__rosidl_typesupport_introspection_c
+[2.638s] [ 44%] Built target tutorial_interfaces__rosidl_typesupport_introspection_cpp
+[2.641s] [ 55%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_c
+[2.650s] [ 65%] Built target tutorial_interfaces__rosidl_typesupport_cpp
+[2.654s] [ 76%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_cpp
+[2.673s] [ 76%] Built target tutorial_interfaces
+[2.696s] [ 78%] Built target tutorial_interfaces__py
+[2.708s] [35m[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_generator_py[0m
+[2.723s] [ 87%] Built target tutorial_interfaces__rosidl_generator_py
+[2.734s] [35m[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[2.736s] [35m[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[2.737s] [35m[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_c__pyext[0m
+[2.751s] [ 91%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[2.753s] [ 95%] Built target tutorial_interfaces__rosidl_typesupport_introspection_c__pyext
+[2.755s] [100%] Built target tutorial_interfaces__rosidl_typesupport_c__pyext
+[2.957s] running egg_info
+[2.958s] writing tutorial_interfaces.egg-info/PKG-INFO
+[2.959s] writing dependency_links to tutorial_interfaces.egg-info/dependency_links.txt
+[2.959s] writing top-level names to tutorial_interfaces.egg-info/top_level.txt
+[2.961s] reading manifest file 'tutorial_interfaces.egg-info/SOURCES.txt'
+[2.962s] writing manifest file 'tutorial_interfaces.egg-info/SOURCES.txt'
+[2.991s] [100%] Built target ament_cmake_python_build_tutorial_interfaces_egg
+[3.002s] Invoked command in '/home/drymer/ros2_ws/build/tutorial_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/drymer/launch_ws/install/launch_tutorial:/home/drymer/launch_ws/install/py_launch_example:/home/drymer/launch_ws/src/install/py_launch_example:/home/drymer/ros2_ws/install/python_parameters:/home/drymer/ros2_ws/install/py_pubsub:/home/drymer/ros2_ws/install/py_srvcli:/home/drymer/ros2_ws/install/my_package:/opt/ros/humble /usr/bin/cmake --build /home/drymer/ros2_ws/build/tutorial_interfaces -- -j12 -l12
+[3.123s] Invoking command in '/home/drymer/ros2_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/drymer/launch_ws/install/launch_tutorial:/home/drymer/launch_ws/install/py_launch_example:/home/drymer/launch_ws/src/install/py_launch_example:/home/drymer/ros2_ws/install/python_parameters:/home/drymer/ros2_ws/install/py_pubsub:/home/drymer/ros2_ws/install/py_srvcli:/home/drymer/ros2_ws/install/my_package:/opt/ros/humble /usr/bin/cmake --install /home/drymer/ros2_ws/build/tutorial_interfaces
+[3.132s] -- Install configuration: ""
+[3.132s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/ament_index/resource_index/rosidl_interfaces/tutorial_interfaces
+[3.133s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces
+[3.133s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv
+[3.133s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/add_three_ints.h
+[3.133s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail
+[3.133s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__functions.h
+[3.133s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__type_support.h
+[3.133s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__functions.c
+[3.134s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__struct.h
+[3.134s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg
+[3.134s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/num.h
+[3.134s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail
+[3.134s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__functions.h
+[3.135s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__functions.c
+[3.135s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__struct.h
+[3.135s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__type_support.h
+[3.135s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__type_support.h
+[3.135s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__struct.h
+[3.136s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__functions.h
+[3.136s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__functions.c
+[3.136s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/sphere.h
+[3.136s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/rosidl_generator_c__visibility_control.h
+[3.136s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/library_path.sh
+[3.137s] -- Installing: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/library_path.dsv
+[3.137s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_generator_c.so
+[3.137s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces
+[3.137s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv
+[3.138s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail
+[3.138s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__rosidl_typesupport_fastrtps_c.h
+[3.138s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg
+[3.138s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail
+[3.139s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__rosidl_typesupport_fastrtps_c.h
+[3.139s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
+[3.139s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.139s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so
+[3.139s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces
+[3.139s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv
+[3.140s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail
+[3.140s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__struct.hpp
+[3.140s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__traits.hpp
+[3.140s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__builder.hpp
+[3.141s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/add_three_ints.hpp
+[3.141s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg
+[3.141s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/sphere.hpp
+[3.141s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/num.hpp
+[3.141s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail
+[3.141s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__struct.hpp
+[3.141s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__builder.hpp
+[3.142s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__traits.hpp
+[3.142s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__builder.hpp
+[3.142s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__traits.hpp
+[3.142s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__struct.hpp
+[3.142s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces
+[3.142s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv
+[3.142s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail
+[3.142s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/dds_fastrtps
+[3.143s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__rosidl_typesupport_fastrtps_cpp.hpp
+[3.143s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg
+[3.143s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.143s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail
+[3.143s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/dds_fastrtps
+[3.144s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp
+[3.144s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__rosidl_typesupport_fastrtps_cpp.hpp
+[3.144s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[3.144s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces
+[3.145s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv
+[3.145s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail
+[3.145s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__type_support.c
+[3.145s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__rosidl_typesupport_introspection_c.h
+[3.145s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg
+[3.145s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail
+[3.145s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__rosidl_typesupport_introspection_c.h
+[3.145s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__rosidl_typesupport_introspection_c.h
+[3.146s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__type_support.c
+[3.146s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__type_support.c
+[3.146s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.146s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_c.so
+[3.146s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_c.so
+[3.146s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces
+[3.147s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv
+[3.147s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail
+[3.147s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__type_support.cpp
+[3.147s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__rosidl_typesupport_introspection_cpp.hpp
+[3.147s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg
+[3.148s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail
+[3.148s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__type_support.cpp
+[3.148s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__type_support.cpp
+[3.148s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__rosidl_typesupport_introspection_cpp.hpp
+[3.149s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__rosidl_typesupport_introspection_cpp.hpp
+[3.149s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_cpp.so
+[3.149s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_cpp.so
+[3.149s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/pythonpath.sh
+[3.149s] -- Installing: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/pythonpath.dsv
+[3.149s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces-0.0.0-py3.10.egg-info
+[3.150s] -- Installing: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[3.150s] -- Installing: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[3.150s] -- Installing: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.150s] -- Installing: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.150s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces
+[3.150s] -- Installing: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/__init__.py
+[3.150s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.150s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/libtutorial_interfaces__rosidl_generator_py.so
+[3.150s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.151s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c
+[3.151s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.151s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[3.151s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/srv
+[3.151s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/srv/__init__.py
+[3.151s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/srv/_add_three_ints.py
+[3.151s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/srv/_add_three_ints_s.c
+[3.151s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg
+[3.151s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg/__init__.py
+[3.152s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg/_num.py
+[3.152s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg/_num_s.c
+[3.152s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg/_sphere.py
+[3.152s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg/_sphere_s.c
+[3.152s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.202s] Listing '/home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces'...
+[3.202s] Compiling '/home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/__init__.py'...
+[3.202s] Listing '/home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg'...
+[3.202s] Listing '/home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/srv'...
+[3.209s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.210s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.211s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.212s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_generator_py.so
+[3.212s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/Num.idl
+[3.213s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/Sphere.idl
+[3.213s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/AddThreeInts.idl
+[3.213s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/Num.msg
+[3.214s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/Sphere.msg
+[3.214s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/AddThreeInts.srv
+[3.214s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/AddThreeInts_Request.msg
+[3.215s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/AddThreeInts_Response.msg
+[3.215s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/ament_index/resource_index/package_run_dependencies/tutorial_interfaces
+[3.215s] -- Installing: /home/drymer/ros2_ws/install/tutorial_interfaces/share/ament_index/resource_index/parent_prefix_path/tutorial_interfaces
+[3.216s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/ament_prefix_path.sh
+[3.216s] -- Installing: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/ament_prefix_path.dsv
+[3.216s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/path.sh
+[3.217s] -- Installing: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/path.dsv
+[3.217s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.bash
+[3.217s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.sh
+[3.217s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.zsh
+[3.217s] -- Installing: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.dsv
+[3.218s] -- Installing: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.dsv
+[3.218s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/ament_index/resource_index/packages/tutorial_interfaces
+[3.219s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_generator_cExport.cmake
+[3.219s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_generator_cExport-noconfig.cmake
+[3.219s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[3.219s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.220s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_generator_cppExport.cmake
+[3.220s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.220s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.221s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[3.221s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.221s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cExport.cmake
+[3.221s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[3.222s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[3.222s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.222s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cppExport.cmake
+[3.222s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[3.222s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_generator_pyExport.cmake
+[3.222s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[3.222s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/rosidl_cmake-extras.cmake
+[3.222s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.222s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.222s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[3.223s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[3.223s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.223s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.223s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfacesConfig.cmake
+[3.224s] -- Up-to-date: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfacesConfig-version.cmake
+[3.224s] -- Installing: /home/drymer/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.xml
+[3.226s] Invoked command in '/home/drymer/ros2_ws/build/tutorial_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/drymer/launch_ws/install/launch_tutorial:/home/drymer/launch_ws/install/py_launch_example:/home/drymer/launch_ws/src/install/py_launch_example:/home/drymer/ros2_ws/install/python_parameters:/home/drymer/ros2_ws/install/py_pubsub:/home/drymer/ros2_ws/install/py_srvcli:/home/drymer/ros2_ws/install/my_package:/opt/ros/humble /usr/bin/cmake --install /home/drymer/ros2_ws/build/tutorial_interfaces

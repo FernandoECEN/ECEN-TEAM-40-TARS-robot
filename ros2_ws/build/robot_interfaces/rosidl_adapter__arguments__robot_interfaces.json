@@ -1,0 +1,7 @@
+{
+  "package_name": "robot_interfaces",
+  "non_idl_tuples": [
+    "/home/drymer/ros2_ws/src/robot_interfaces:msg/MotorFeedback.msg",
+    "/home/drymer/ros2_ws/src/robot_interfaces:action/MotorControl.action"
+  ]
+}
