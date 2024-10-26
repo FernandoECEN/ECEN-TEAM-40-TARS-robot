@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
             'client = robot_system.motor_control_client:main',
             'action = robot_system.motor_control_server:main',
+            'publisher = robot_system.vision_publisher:main',
         ],
     },
 )

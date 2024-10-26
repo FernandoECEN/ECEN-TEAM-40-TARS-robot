@@ -23,9 +23,9 @@ class MotorControlServer(Node):
             self,
             MotorControl,
             'motor_control',
-            self.execute_callback)
+            self.motor_control_callback)
 
-    def execute_callback(self, goal_handle):
+    def motor_control_callback(self, goal_handle):
         global motor1pos
         global motor2pos
         self.get_logger().info('Executing goal...')

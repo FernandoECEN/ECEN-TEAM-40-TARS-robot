@@ -84,6 +84,7 @@ rosidl_generator_c/robot_interfaces/msg/motor_feedback.h: /opt/ros/humble/share/
 rosidl_generator_c/robot_interfaces/msg/motor_feedback.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/robot_interfaces/msg/motor_feedback.h: rosidl_adapter/robot_interfaces/msg/MotorFeedback.idl
 rosidl_generator_c/robot_interfaces/msg/motor_feedback.h: rosidl_adapter/robot_interfaces/action/MotorControl.idl
+rosidl_generator_c/robot_interfaces/msg/motor_feedback.h: rosidl_adapter/robot_interfaces/msg/VisionData.idl
 rosidl_generator_c/robot_interfaces/msg/motor_feedback.h: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 rosidl_generator_c/robot_interfaces/msg/motor_feedback.h: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
 rosidl_generator_c/robot_interfaces/msg/motor_feedback.h: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
@@ -115,11 +116,26 @@ rosidl_generator_c/robot_interfaces/action/detail/motor_control__struct.h: rosid
 rosidl_generator_c/robot_interfaces/action/detail/motor_control__type_support.h: rosidl_generator_c/robot_interfaces/msg/motor_feedback.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/robot_interfaces/action/detail/motor_control__type_support.h
 
+rosidl_generator_c/robot_interfaces/msg/vision_data.h: rosidl_generator_c/robot_interfaces/msg/motor_feedback.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/robot_interfaces/msg/vision_data.h
+
+rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.h: rosidl_generator_c/robot_interfaces/msg/motor_feedback.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.h
+
+rosidl_generator_c/robot_interfaces/msg/detail/vision_data__struct.h: rosidl_generator_c/robot_interfaces/msg/motor_feedback.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/robot_interfaces/msg/detail/vision_data__struct.h
+
+rosidl_generator_c/robot_interfaces/msg/detail/vision_data__type_support.h: rosidl_generator_c/robot_interfaces/msg/motor_feedback.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/robot_interfaces/msg/detail/vision_data__type_support.h
+
 rosidl_generator_c/robot_interfaces/msg/detail/motor_feedback__functions.c: rosidl_generator_c/robot_interfaces/msg/motor_feedback.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/robot_interfaces/msg/detail/motor_feedback__functions.c
 
 rosidl_generator_c/robot_interfaces/action/detail/motor_control__functions.c: rosidl_generator_c/robot_interfaces/msg/motor_feedback.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/robot_interfaces/action/detail/motor_control__functions.c
+
+rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.c: rosidl_generator_c/robot_interfaces/msg/motor_feedback.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.c
 
 CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/motor_feedback__functions.c.o: CMakeFiles/robot_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/motor_feedback__functions.c.o: rosidl_generator_c/robot_interfaces/msg/detail/motor_feedback__functions.c
@@ -149,16 +165,32 @@ CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_int
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/action/detail/motor_control__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_c/robot_interfaces/action/detail/motor_control__functions.c -o CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/action/detail/motor_control__functions.c.s
 
+CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.c.o: CMakeFiles/robot_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.c.o: rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.c
+CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.c.o: CMakeFiles/robot_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/drymer/ros2_ws/build/robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.c.o -MF CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.c.o.d -o CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.c.o -c /home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.c
+
+CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.c > CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.c.i
+
+CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.c -o CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.c.s
+
 # Object files for target robot_interfaces__rosidl_generator_c
 robot_interfaces__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/motor_feedback__functions.c.o" \
-"CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/action/detail/motor_control__functions.c.o"
+"CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/action/detail/motor_control__functions.c.o" \
+"CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.c.o"
 
 # External object files for target robot_interfaces__rosidl_generator_c
 robot_interfaces__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 librobot_interfaces__rosidl_generator_c.so: CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/motor_feedback__functions.c.o
 librobot_interfaces__rosidl_generator_c.so: CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/action/detail/motor_control__functions.c.o
+librobot_interfaces__rosidl_generator_c.so: CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.c.o
 librobot_interfaces__rosidl_generator_c.so: CMakeFiles/robot_interfaces__rosidl_generator_c.dir/build.make
 librobot_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
 librobot_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
@@ -166,7 +198,7 @@ librobot_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libunique_identi
 librobot_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 librobot_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 librobot_interfaces__rosidl_generator_c.so: CMakeFiles/robot_interfaces__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/drymer/ros2_ws/build/robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library librobot_interfaces__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/drymer/ros2_ws/build/robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library librobot_interfaces__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/robot_interfaces__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -186,7 +218,12 @@ CMakeFiles/robot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/r
 CMakeFiles/robot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/robot_interfaces/msg/detail/motor_feedback__functions.h
 CMakeFiles/robot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/robot_interfaces/msg/detail/motor_feedback__struct.h
 CMakeFiles/robot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/robot_interfaces/msg/detail/motor_feedback__type_support.h
+CMakeFiles/robot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.c
+CMakeFiles/robot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.h
+CMakeFiles/robot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/robot_interfaces/msg/detail/vision_data__struct.h
+CMakeFiles/robot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/robot_interfaces/msg/detail/vision_data__type_support.h
 CMakeFiles/robot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/robot_interfaces/msg/motor_feedback.h
+CMakeFiles/robot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/robot_interfaces/msg/vision_data.h
 	cd /home/drymer/ros2_ws/build/robot_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/drymer/ros2_ws/src/robot_interfaces /home/drymer/ros2_ws/src/robot_interfaces /home/drymer/ros2_ws/build/robot_interfaces /home/drymer/ros2_ws/build/robot_interfaces /home/drymer/ros2_ws/build/robot_interfaces/CMakeFiles/robot_interfaces__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/robot_interfaces__rosidl_generator_c.dir/depend
 

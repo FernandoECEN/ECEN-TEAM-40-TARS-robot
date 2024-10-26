@@ -7,7 +7,11 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/robot_interfaces/msg/detail/motor_feedback__builder.hpp"
   "rosidl_generator_cpp/robot_interfaces/msg/detail/motor_feedback__struct.hpp"
   "rosidl_generator_cpp/robot_interfaces/msg/detail/motor_feedback__traits.hpp"
+  "rosidl_generator_cpp/robot_interfaces/msg/detail/vision_data__builder.hpp"
+  "rosidl_generator_cpp/robot_interfaces/msg/detail/vision_data__struct.hpp"
+  "rosidl_generator_cpp/robot_interfaces/msg/detail/vision_data__traits.hpp"
   "rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp"
+  "rosidl_generator_cpp/robot_interfaces/msg/vision_data.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

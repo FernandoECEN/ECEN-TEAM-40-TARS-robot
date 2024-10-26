@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/robot_interfaces/msg/__init__.py"
   "../rosidl_generator_py/robot_interfaces/msg/_motor_feedback.py"
   "../rosidl_generator_py/robot_interfaces/msg/_motor_feedback_s.c"
+  "../rosidl_generator_py/robot_interfaces/msg/_vision_data.py"
+  "../rosidl_generator_py/robot_interfaces/msg/_vision_data_s.c"
   "CMakeFiles/robot_interfaces__py"
 )
 

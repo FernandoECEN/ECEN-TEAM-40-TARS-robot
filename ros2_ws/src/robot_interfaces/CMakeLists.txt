@@ -29,6 +29,7 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/MotorFeedback.msg"
   "action/MotorControl.action"
+  "msg/VisionData.msg"
 )
 
 ament_package()

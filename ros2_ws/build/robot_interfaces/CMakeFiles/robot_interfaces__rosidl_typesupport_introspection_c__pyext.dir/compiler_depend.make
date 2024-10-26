@@ -246,6 +246,11 @@ CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosid
   rosidl_generator_c/robot_interfaces/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/robot_interfaces/msg/detail/motor_feedback__struct.h \
   rosidl_generator_c/robot_interfaces/msg/detail/motor_feedback__functions.h \
+  rosidl_generator_c/robot_interfaces/msg/detail/vision_data__type_support.h \
+  rosidl_generator_c/robot_interfaces/msg/detail/vision_data__struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+  rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.h \
   rosidl_generator_c/robot_interfaces/action/detail/motor_control__type_support.h \
   rosidl_generator_c/robot_interfaces/action/detail/motor_control__struct.h \
   /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
@@ -259,7 +264,11 @@ rosidl_generator_c/robot_interfaces/action/detail/motor_control__functions.h:
 
 rosidl_generator_c/robot_interfaces/action/detail/motor_control__struct.h:
 
+rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.h:
+
 rosidl_generator_c/robot_interfaces/msg/detail/motor_feedback__functions.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
 
 rosidl_generator_c/robot_interfaces/msg/rosidl_generator_c__visibility_control.h:
 
@@ -363,6 +372,8 @@ rosidl_generator_c/robot_interfaces/action/detail/motor_control__type_support.h:
 
 /usr/include/wchar.h:
 
+rosidl_generator_c/robot_interfaces/msg/detail/vision_data__struct.h:
+
 /usr/include/python3.10/listobject.h:
 
 /usr/include/ctype.h:
@@ -394,6 +405,8 @@ rosidl_generator_c/robot_interfaces/action/detail/motor_control__type_support.h:
 /usr/include/python3.10/fileobject.h:
 
 /usr/include/x86_64-linux-gnu/bits/statx-generic.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
@@ -540,6 +553,8 @@ rosidl_generator_c/robot_interfaces/action/detail/motor_control__type_support.h:
 rosidl_generator_c/robot_interfaces/msg/detail/motor_feedback__type_support.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+rosidl_generator_c/robot_interfaces/msg/detail/vision_data__type_support.h:
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 

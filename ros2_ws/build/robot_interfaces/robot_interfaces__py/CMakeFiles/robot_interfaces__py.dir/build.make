@@ -71,10 +71,12 @@ robot_interfaces__py/CMakeFiles/robot_interfaces__py: rosidl_generator_py/robot_
 robot_interfaces__py/CMakeFiles/robot_interfaces__py: rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_c.c
 robot_interfaces__py/CMakeFiles/robot_interfaces__py: rosidl_generator_py/robot_interfaces/msg/_motor_feedback.py
 robot_interfaces__py/CMakeFiles/robot_interfaces__py: rosidl_generator_py/robot_interfaces/action/_motor_control.py
+robot_interfaces__py/CMakeFiles/robot_interfaces__py: rosidl_generator_py/robot_interfaces/msg/_vision_data.py
 robot_interfaces__py/CMakeFiles/robot_interfaces__py: rosidl_generator_py/robot_interfaces/msg/__init__.py
 robot_interfaces__py/CMakeFiles/robot_interfaces__py: rosidl_generator_py/robot_interfaces/action/__init__.py
 robot_interfaces__py/CMakeFiles/robot_interfaces__py: rosidl_generator_py/robot_interfaces/msg/_motor_feedback_s.c
 robot_interfaces__py/CMakeFiles/robot_interfaces__py: rosidl_generator_py/robot_interfaces/action/_motor_control_s.c
+robot_interfaces__py/CMakeFiles/robot_interfaces__py: rosidl_generator_py/robot_interfaces/msg/_vision_data_s.c
 
 rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -91,6 +93,7 @@ rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_f
 rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/robot_interfaces/msg/MotorFeedback.idl
 rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/robot_interfaces/action/MotorControl.idl
+rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/robot_interfaces/msg/VisionData.idl
 rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
 rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
@@ -113,6 +116,9 @@ rosidl_generator_py/robot_interfaces/msg/_motor_feedback.py: rosidl_generator_py
 rosidl_generator_py/robot_interfaces/action/_motor_control.py: rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/robot_interfaces/action/_motor_control.py
 
+rosidl_generator_py/robot_interfaces/msg/_vision_data.py: rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/robot_interfaces/msg/_vision_data.py
+
 rosidl_generator_py/robot_interfaces/msg/__init__.py: rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/robot_interfaces/msg/__init__.py
 
@@ -125,6 +131,9 @@ rosidl_generator_py/robot_interfaces/msg/_motor_feedback_s.c: rosidl_generator_p
 rosidl_generator_py/robot_interfaces/action/_motor_control_s.c: rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/robot_interfaces/action/_motor_control_s.c
 
+rosidl_generator_py/robot_interfaces/msg/_vision_data_s.c: rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/robot_interfaces/msg/_vision_data_s.c
+
 robot_interfaces__py: robot_interfaces__py/CMakeFiles/robot_interfaces__py
 robot_interfaces__py: rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_c.c
 robot_interfaces__py: rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
@@ -135,6 +144,8 @@ robot_interfaces__py: rosidl_generator_py/robot_interfaces/action/_motor_control
 robot_interfaces__py: rosidl_generator_py/robot_interfaces/msg/__init__.py
 robot_interfaces__py: rosidl_generator_py/robot_interfaces/msg/_motor_feedback.py
 robot_interfaces__py: rosidl_generator_py/robot_interfaces/msg/_motor_feedback_s.c
+robot_interfaces__py: rosidl_generator_py/robot_interfaces/msg/_vision_data.py
+robot_interfaces__py: rosidl_generator_py/robot_interfaces/msg/_vision_data_s.c
 robot_interfaces__py: robot_interfaces__py/CMakeFiles/robot_interfaces__py.dir/build.make
 .PHONY : robot_interfaces__py
 

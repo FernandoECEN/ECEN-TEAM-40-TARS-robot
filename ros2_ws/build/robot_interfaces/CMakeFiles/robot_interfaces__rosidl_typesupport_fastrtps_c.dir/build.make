@@ -79,6 +79,7 @@ rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/motor_feedback__rosidl
 rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/motor_feedback__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__type_support_c.cpp.em
 rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/motor_feedback__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/robot_interfaces/msg/MotorFeedback.idl
 rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/motor_feedback__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/robot_interfaces/action/MotorControl.idl
+rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/motor_feedback__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/robot_interfaces/msg/VisionData.idl
 rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/motor_feedback__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/motor_feedback__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
 rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/motor_feedback__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
@@ -97,6 +98,12 @@ rosidl_typesupport_fastrtps_c/robot_interfaces/action/detail/motor_control__rosi
 
 rosidl_typesupport_fastrtps_c/robot_interfaces/action/detail/motor_control__type_support_c.cpp: rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/motor_feedback__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/robot_interfaces/action/detail/motor_control__type_support_c.cpp
+
+rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/motor_feedback__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__rosidl_typesupport_fastrtps_c.h
+
+rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__type_support_c.cpp: rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/motor_feedback__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__type_support_c.cpp
 
 CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/motor_feedback__type_support_c.cpp.o: CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/motor_feedback__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/motor_feedback__type_support_c.cpp
@@ -126,16 +133,32 @@ CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesuppor
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/action/detail/motor_control__type_support_c.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/drymer/ros2_ws/build/robot_interfaces/rosidl_typesupport_fastrtps_c/robot_interfaces/action/detail/motor_control__type_support_c.cpp -o CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/action/detail/motor_control__type_support_c.cpp.s
 
+CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__type_support_c.cpp.o: CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__type_support_c.cpp
+CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__type_support_c.cpp.o: CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/drymer/ros2_ws/build/robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__type_support_c.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__type_support_c.cpp.o -MF CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__type_support_c.cpp.o.d -o CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__type_support_c.cpp.o -c /home/drymer/ros2_ws/build/robot_interfaces/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__type_support_c.cpp
+
+CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__type_support_c.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/drymer/ros2_ws/build/robot_interfaces/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__type_support_c.cpp > CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__type_support_c.cpp.i
+
+CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__type_support_c.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/drymer/ros2_ws/build/robot_interfaces/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__type_support_c.cpp -o CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__type_support_c.cpp.s
+
 # Object files for target robot_interfaces__rosidl_typesupport_fastrtps_c
 robot_interfaces__rosidl_typesupport_fastrtps_c_OBJECTS = \
 "CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/motor_feedback__type_support_c.cpp.o" \
-"CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/action/detail/motor_control__type_support_c.cpp.o"
+"CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/action/detail/motor_control__type_support_c.cpp.o" \
+"CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__type_support_c.cpp.o"
 
 # External object files for target robot_interfaces__rosidl_typesupport_fastrtps_c
 robot_interfaces__rosidl_typesupport_fastrtps_c_EXTERNAL_OBJECTS =
 
 librobot_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/motor_feedback__type_support_c.cpp.o
 librobot_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/action/detail/motor_control__type_support_c.cpp.o
+librobot_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__type_support_c.cpp.o
 librobot_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make
 librobot_interfaces__rosidl_typesupport_fastrtps_c.so: librobot_interfaces__rosidl_generator_c.so
 librobot_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so
@@ -151,7 +174,7 @@ librobot_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libun
 librobot_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 librobot_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librcutils.so
 librobot_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/drymer/ros2_ws/build/robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library librobot_interfaces__rosidl_typesupport_fastrtps_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/drymer/ros2_ws/build/robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library librobot_interfaces__rosidl_typesupport_fastrtps_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -166,6 +189,8 @@ CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_ty
 CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/robot_interfaces/action/detail/motor_control__type_support_c.cpp
 CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/motor_feedback__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/motor_feedback__type_support_c.cpp
+CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__type_support_c.cpp
 	cd /home/drymer/ros2_ws/build/robot_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/drymer/ros2_ws/src/robot_interfaces /home/drymer/ros2_ws/src/robot_interfaces /home/drymer/ros2_ws/build/robot_interfaces /home/drymer/ros2_ws/build/robot_interfaces /home/drymer/ros2_ws/build/robot_interfaces/CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/depend
 
