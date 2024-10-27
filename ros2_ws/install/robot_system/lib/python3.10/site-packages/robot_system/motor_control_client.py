@@ -4,28 +4,62 @@ from rclpy.node import Node
 
 from robot_interfaces.action import MotorControl
 from robot_interfaces.msg import VisionData
+from robot_interfaces.msg import ControllerCommand
 
 SPIN_QUEUE = []
 PERIOD = 0.01
+motorid = 0
+motordirection = 0
+motorspeed = 0
+goal = 0
 
-class VisionSub(Node):
+class SubscriberNode(Node):
     def __init__(self):
         super().__init__('vision_subscriber')
-        self.subscription = self.create_subscription(VisionData,'topic',self.listener_callback,10)
-        self.subscription
+        self.visionsub = self.create_subscription(VisionData,'vision_topic',self.vision_listener_callback,10)
+        self.controllersub = self.create_subscription(ControllerCommand,'controller_topic',self.controller_listener_callback,10)
         self.itemsdetected = ['person','bike','chair']
         self.distances = [1.03,1.62,3.59]
         
-    def listener_callback(self, msg):
+    def vision_listener_callback(self, msg):
         self.itemsdetected = msg.ai_detect_array
         self.distances = msg.distance_array
         self.get_logger().info(f'I heard: Items detected: {self.itemsdetected}, Distances: {self.distances}')
+        
+    def controller_listener_callback(self, msg):
+        global motorid
+        global motordirection
+        global motorspeed
+        global goal
+        motorid = msg.motor_id
+        motordirection = msg.motor_direction
+        motorspeed = msg.motor_speed
+        goal = motorspeed
+        self.get_logger().info(f'Command Recieved: {motorid} {motordirection} {motorspeed}')
 
-class MotorControlClient(Node):
+class MasterNode(Node):
 
     def __init__(self):
-        super().__init__('motor_control_client')
+        super().__init__('robot_master_node')
         self._motor_client = ActionClient(self, MotorControl, 'motor_control')
+        self.visionsub = self.create_subscription(VisionData,'vision_topic',self.vision_listener_callback,10)
+        self.controllersub = self.create_subscription(ControllerCommand,'controller_topic',self.controller_listener_callback,10)
+        
+    def vision_listener_callback(self, msg):
+        self.itemsdetected = msg.ai_detect_array
+        self.distances = msg.distance_array
+        self.get_logger().info(f'I heard: Items detected: {self.itemsdetected}, Distances: {self.distances}')
+        
+    def controller_listener_callback(self, msg):
+        global motorid
+        global motordirection
+        global motorspeed
+        global goal
+        motorid = msg.motor_id
+        motordirection = msg.motor_direction
+        motorspeed = msg.motor_speed
+        self.get_logger().info(f'Command Recieved: {motorid} {motordirection} {motorspeed}')
+        self.send_goal(motorspeed)
 
     def send_goal(self, moveorder):
         goal_msg = MotorControl.Goal()
@@ -40,10 +74,10 @@ class MotorControlClient(Node):
     def goal_response_callback(self, future):
         goal_handle = future.result()
         if not goal_handle.accepted:
-            self.get_logger().info('Goal rejected :(')
+            self.get_logger().info('Goal rejected')
             return
 
-        self.get_logger().info('Goal accepted :)')
+        self.get_logger().info('Goal accepted')
 
         self._get_result_future = goal_handle.get_result_async()
         self._get_result_future.add_done_callback(self.get_result_callback)
@@ -58,25 +92,11 @@ class MotorControlClient(Node):
 
 
 def main(args=None):
-    
+    global goal
     rclpy.init(args=args)
     
-    # you'll probably want to append your own node here
-    motor_action = MotorControlClient()
-    i = 0
+    rclpy.spin(MasterNode())
     
-    SPIN_QUEUE.append(VisionSub())
-    SPIN_QUEUE.append(motor_action)
-
-    while rclpy.ok():
-        i += 1
-        if i==100 or i == 200: motor_action.send_goal(10)
-        try:
-            for node in SPIN_QUEUE:
-                rclpy.spin_once(node, timeout_sec=(PERIOD / len(SPIN_QUEUE)))
-        except Exception as e:
-            print(f"something went wrong in the ROS Loop: {e}")
-
     rclpy.shutdown()
 
 

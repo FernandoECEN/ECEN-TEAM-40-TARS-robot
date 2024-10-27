@@ -210,6 +210,9 @@ CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_gen
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
  /home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.h \
+ /home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_c/robot_interfaces/msg/detail/controller_command__type_support.h \
+ /home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_c/robot_interfaces/msg/detail/controller_command__struct.h \
+ /home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_c/robot_interfaces/msg/detail/controller_command__functions.h \
  /home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_c/robot_interfaces/action/detail/motor_control__type_support.h \
  /home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_c/robot_interfaces/action/detail/motor_control__struct.h \
  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \

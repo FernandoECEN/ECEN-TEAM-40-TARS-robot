@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/action/motor_control__type_support.cpp.o"
   "CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/action/motor_control__type_support.cpp.o.d"
+  "CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/msg/controller_command__type_support.cpp.o"
+  "CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/msg/controller_command__type_support.cpp.o.d"
   "CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/msg/motor_feedback__type_support.cpp.o"
   "CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/msg/motor_feedback__type_support.cpp.o.d"
   "CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/msg/vision_data__type_support.cpp.o"
@@ -8,6 +10,7 @@ file(REMOVE_RECURSE
   "librobot_interfaces__rosidl_typesupport_c.pdb"
   "librobot_interfaces__rosidl_typesupport_c.so"
   "rosidl_typesupport_c/robot_interfaces/action/motor_control__type_support.cpp"
+  "rosidl_typesupport_c/robot_interfaces/msg/controller_command__type_support.cpp"
   "rosidl_typesupport_c/robot_interfaces/msg/motor_feedback__type_support.cpp"
   "rosidl_typesupport_c/robot_interfaces/msg/vision_data__type_support.cpp"
 )

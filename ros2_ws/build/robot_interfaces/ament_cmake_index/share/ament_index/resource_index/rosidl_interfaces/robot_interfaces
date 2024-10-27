@@ -1,5 +1,7 @@
 action/MotorControl.action
 action/MotorControl.idl
+msg/ControllerCommand.idl
+msg/ControllerCommand.msg
 msg/MotorFeedback.idl
 msg/MotorFeedback.msg
 msg/VisionData.idl

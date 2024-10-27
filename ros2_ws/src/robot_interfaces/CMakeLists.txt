@@ -30,6 +30,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/MotorFeedback.msg"
   "action/MotorControl.action"
   "msg/VisionData.msg"
+  "msg/ControllerCommand.msg"
+  "msg/StereoImages.msg"
 )
 
 ament_package()

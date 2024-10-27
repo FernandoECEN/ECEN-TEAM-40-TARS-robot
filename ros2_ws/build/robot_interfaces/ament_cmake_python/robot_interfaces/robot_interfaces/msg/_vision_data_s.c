@@ -55,13 +55,13 @@ bool robot_interfaces__msg__vision_data__convert_from_py(PyObject * _pymsg, void
     assert(strncmp("robot_interfaces.msg._vision_data.VisionData", full_classname_dest, 44) == 0);
   }
   robot_interfaces__msg__VisionData * ros_message = _ros_message;
-  {  // ai_dectect_array
-    PyObject * field = PyObject_GetAttrString(_pymsg, "ai_dectect_array");
+  {  // ai_detect_array
+    PyObject * field = PyObject_GetAttrString(_pymsg, "ai_detect_array");
     if (!field) {
       return false;
     }
     {
-      PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'ai_dectect_array'");
+      PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'ai_detect_array'");
       if (!seq_field) {
         Py_DECREF(field);
         return false;
@@ -72,13 +72,13 @@ bool robot_interfaces__msg__vision_data__convert_from_py(PyObject * _pymsg, void
         Py_DECREF(field);
         return false;
       }
-      if (!rosidl_runtime_c__String__Sequence__init(&(ros_message->ai_dectect_array), size)) {
+      if (!rosidl_runtime_c__String__Sequence__init(&(ros_message->ai_detect_array), size)) {
         PyErr_SetString(PyExc_RuntimeError, "unable to create String__Sequence ros_message");
         Py_DECREF(seq_field);
         Py_DECREF(field);
         return false;
       }
-      rosidl_runtime_c__String * dest = ros_message->ai_dectect_array.data;
+      rosidl_runtime_c__String * dest = ros_message->ai_detect_array.data;
       for (Py_ssize_t i = 0; i < size; ++i) {
         PyObject * item = PySequence_Fast_GET_ITEM(seq_field, i);
         if (!item) {
@@ -184,10 +184,10 @@ PyObject * robot_interfaces__msg__vision_data__convert_to_py(void * raw_ros_mess
     }
   }
   robot_interfaces__msg__VisionData * ros_message = (robot_interfaces__msg__VisionData *)raw_ros_message;
-  {  // ai_dectect_array
+  {  // ai_detect_array
     PyObject * field = NULL;
-    size_t size = ros_message->ai_dectect_array.size;
-    rosidl_runtime_c__String * src = ros_message->ai_dectect_array.data;
+    size_t size = ros_message->ai_detect_array.size;
+    rosidl_runtime_c__String * src = ros_message->ai_detect_array.data;
     field = PyList_New(size);
     if (!field) {
       return NULL;
@@ -203,7 +203,7 @@ PyObject * robot_interfaces__msg__vision_data__convert_to_py(void * raw_ros_mess
     }
     assert(PySequence_Check(field));
     {
-      int rc = PyObject_SetAttrString(_pymessage, "ai_dectect_array", field);
+      int rc = PyObject_SetAttrString(_pymessage, "ai_detect_array", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

@@ -1,0 +1,3 @@
+int32 motor_id
+int32 motor_direction
+int32 motor_speed

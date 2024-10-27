@@ -60,12 +60,12 @@ class VisionData(metaclass=Metaclass_VisionData):
     """Message class 'VisionData'."""
 
     __slots__ = [
-        '_ai_dectect_array',
+        '_ai_detect_array',
         '_distance_array',
     ]
 
     _fields_and_field_types = {
-        'ai_dectect_array': 'sequence<string>',
+        'ai_detect_array': 'sequence<string>',
         'distance_array': 'sequence<double>',
     }
 
@@ -78,7 +78,7 @@ class VisionData(metaclass=Metaclass_VisionData):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.ai_dectect_array = kwargs.get('ai_dectect_array', [])
+        self.ai_detect_array = kwargs.get('ai_detect_array', [])
         self.distance_array = array.array('d', kwargs.get('distance_array', []))
 
     def __repr__(self):
@@ -110,7 +110,7 @@ class VisionData(metaclass=Metaclass_VisionData):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.ai_dectect_array != other.ai_dectect_array:
+        if self.ai_detect_array != other.ai_detect_array:
             return False
         if self.distance_array != other.distance_array:
             return False
@@ -122,12 +122,12 @@ class VisionData(metaclass=Metaclass_VisionData):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def ai_dectect_array(self):
-        """Message field 'ai_dectect_array'."""
-        return self._ai_dectect_array
+    def ai_detect_array(self):
+        """Message field 'ai_detect_array'."""
+        return self._ai_detect_array
 
-    @ai_dectect_array.setter
-    def ai_dectect_array(self, value):
+    @ai_detect_array.setter
+    def ai_detect_array(self, value):
         if __debug__:
             from collections.abc import Sequence
             from collections.abc import Set
@@ -141,8 +141,8 @@ class VisionData(metaclass=Metaclass_VisionData):
                  not isinstance(value, UserString) and
                  all(isinstance(v, str) for v in value) and
                  True), \
-                "The 'ai_dectect_array' field must be a set or sequence and each value of type 'str'"
-        self._ai_dectect_array = value
+                "The 'ai_detect_array' field must be a set or sequence and each value of type 'str'"
+        self._ai_detect_array = value
 
     @builtins.property
     def distance_array(self):

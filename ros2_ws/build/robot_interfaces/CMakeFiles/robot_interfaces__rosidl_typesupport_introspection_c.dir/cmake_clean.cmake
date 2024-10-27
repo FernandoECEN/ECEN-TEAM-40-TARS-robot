@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/action/detail/motor_control__type_support.c.o"
   "CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/action/detail/motor_control__type_support.c.o.d"
+  "CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/msg/detail/controller_command__type_support.c.o"
+  "CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/msg/detail/controller_command__type_support.c.o.d"
   "CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/msg/detail/motor_feedback__type_support.c.o"
   "CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/msg/detail/motor_feedback__type_support.c.o.d"
   "CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/msg/detail/vision_data__type_support.c.o"
@@ -9,6 +11,8 @@ file(REMOVE_RECURSE
   "librobot_interfaces__rosidl_typesupport_introspection_c.so"
   "rosidl_typesupport_introspection_c/robot_interfaces/action/detail/motor_control__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/robot_interfaces/action/detail/motor_control__type_support.c"
+  "rosidl_typesupport_introspection_c/robot_interfaces/msg/detail/controller_command__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/robot_interfaces/msg/detail/controller_command__type_support.c"
   "rosidl_typesupport_introspection_c/robot_interfaces/msg/detail/motor_feedback__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/robot_interfaces/msg/detail/motor_feedback__type_support.c"
   "rosidl_typesupport_introspection_c/robot_interfaces/msg/detail/vision_data__rosidl_typesupport_introspection_c.h"

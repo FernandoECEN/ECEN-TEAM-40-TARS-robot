@@ -23,6 +23,8 @@ setup(
             'client = robot_system.motor_control_client:main',
             'action = robot_system.motor_control_server:main',
             'publisher = robot_system.vision_publisher:main',
+            'controller = robot_system.controller_publisher:main',
+            'camera = robot_system.camera_publisher:main',
         ],
     },
 )
