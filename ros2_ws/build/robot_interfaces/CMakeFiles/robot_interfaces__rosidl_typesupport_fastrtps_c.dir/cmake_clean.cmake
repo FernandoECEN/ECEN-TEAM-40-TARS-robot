@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/controller_command__type_support_c.cpp.o.d"
   "CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/motor_feedback__type_support_c.cpp.o"
   "CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/motor_feedback__type_support_c.cpp.o.d"
+  "CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/stereo_images__type_support_c.cpp.o"
+  "CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/stereo_images__type_support_c.cpp.o.d"
   "CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__type_support_c.cpp.o"
   "CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__type_support_c.cpp.o.d"
   "librobot_interfaces__rosidl_typesupport_fastrtps_c.pdb"
@@ -15,6 +17,8 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/controller_command__type_support_c.cpp"
   "rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/motor_feedback__rosidl_typesupport_fastrtps_c.h"
   "rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/motor_feedback__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/stereo_images__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/stereo_images__type_support_c.cpp"
   "rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__rosidl_typesupport_fastrtps_c.h"
   "rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__type_support_c.cpp"
 )

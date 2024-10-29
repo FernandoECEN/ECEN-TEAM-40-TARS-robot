@@ -23,9 +23,13 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/msg/detail/motor_feedback__builder.hpp" "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp"
   "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/msg/detail/motor_feedback__struct.hpp" "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp"
   "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/msg/detail/motor_feedback__traits.hpp" "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp"
+  "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/msg/detail/stereo_images__builder.hpp" "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp"
+  "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/msg/detail/stereo_images__struct.hpp" "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp"
+  "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/msg/detail/stereo_images__traits.hpp" "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp"
   "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/msg/detail/vision_data__builder.hpp" "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp"
   "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/msg/detail/vision_data__struct.hpp" "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp"
   "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/msg/detail/vision_data__traits.hpp" "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp"
+  "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/msg/stereo_images.hpp" "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp"
   "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/msg/vision_data.hpp" "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp"
   )
 

@@ -29,7 +29,7 @@ robot_interfaces__msg__VisionData__init(robot_interfaces__msg__VisionData * msg)
     return false;
   }
   // distance_array
-  if (!rosidl_runtime_c__double__Sequence__init(&msg->distance_array, 0)) {
+  if (!rosidl_runtime_c__float__Sequence__init(&msg->distance_array, 0)) {
     robot_interfaces__msg__VisionData__fini(msg);
     return false;
   }
@@ -45,7 +45,7 @@ robot_interfaces__msg__VisionData__fini(robot_interfaces__msg__VisionData * msg)
   // ai_detect_array
   rosidl_runtime_c__String__Sequence__fini(&msg->ai_detect_array);
   // distance_array
-  rosidl_runtime_c__double__Sequence__fini(&msg->distance_array);
+  rosidl_runtime_c__float__Sequence__fini(&msg->distance_array);
 }
 
 bool
@@ -61,7 +61,7 @@ robot_interfaces__msg__VisionData__are_equal(const robot_interfaces__msg__Vision
     return false;
   }
   // distance_array
-  if (!rosidl_runtime_c__double__Sequence__are_equal(
+  if (!rosidl_runtime_c__float__Sequence__are_equal(
       &(lhs->distance_array), &(rhs->distance_array)))
   {
     return false;
@@ -84,7 +84,7 @@ robot_interfaces__msg__VisionData__copy(
     return false;
   }
   // distance_array
-  if (!rosidl_runtime_c__double__Sequence__copy(
+  if (!rosidl_runtime_c__float__Sequence__copy(
       &(input->distance_array), &(output->distance_array)))
   {
     return false;

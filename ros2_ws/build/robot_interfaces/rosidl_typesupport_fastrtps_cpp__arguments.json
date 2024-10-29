@@ -6,7 +6,8 @@
     "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_adapter/robot_interfaces:msg/MotorFeedback.idl",
     "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_adapter/robot_interfaces:action/MotorControl.idl",
     "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_adapter/robot_interfaces:msg/VisionData.idl",
-    "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_adapter/robot_interfaces:msg/ControllerCommand.idl"
+    "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_adapter/robot_interfaces:msg/ControllerCommand.idl",
+    "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_adapter/robot_interfaces:msg/StereoImages.idl"
   ],
   "ros_interface_dependencies": [
     "action_msgs:/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
@@ -30,6 +31,7 @@
     "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_adapter/robot_interfaces/action/MotorControl.idl",
     "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_adapter/robot_interfaces/msg/VisionData.idl",
     "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_adapter/robot_interfaces/msg/ControllerCommand.idl",
+    "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_adapter/robot_interfaces/msg/StereoImages.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalStatus.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl",

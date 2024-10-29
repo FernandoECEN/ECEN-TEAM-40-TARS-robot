@@ -66,12 +66,12 @@ class VisionData(metaclass=Metaclass_VisionData):
 
     _fields_and_field_types = {
         'ai_detect_array': 'sequence<string>',
-        'distance_array': 'sequence<double>',
+        'distance_array': 'sequence<float>',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.UnboundedString()),  # noqa: E501
-        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('double')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -79,7 +79,7 @@ class VisionData(metaclass=Metaclass_VisionData):
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.ai_detect_array = kwargs.get('ai_detect_array', [])
-        self.distance_array = array.array('d', kwargs.get('distance_array', []))
+        self.distance_array = array.array('f', kwargs.get('distance_array', []))
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -152,8 +152,8 @@ class VisionData(metaclass=Metaclass_VisionData):
     @distance_array.setter
     def distance_array(self, value):
         if isinstance(value, array.array):
-            assert value.typecode == 'd', \
-                "The 'distance_array' array.array() must have the type code of 'd'"
+            assert value.typecode == 'f', \
+                "The 'distance_array' array.array() must have the type code of 'f'"
             self._distance_array = value
             return
         if __debug__:
@@ -168,6 +168,6 @@ class VisionData(metaclass=Metaclass_VisionData):
                  not isinstance(value, str) and
                  not isinstance(value, UserString) and
                  all(isinstance(v, float) for v in value) and
-                 all(not (val < -1.7976931348623157e+308 or val > 1.7976931348623157e+308) or math.isinf(val) for val in value)), \
-                "The 'distance_array' field must be a set or sequence and each value of type 'float' and each double in [-179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000, 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000]"
-        self._distance_array = array.array('d', value)
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'distance_array' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._distance_array = array.array('f', value)

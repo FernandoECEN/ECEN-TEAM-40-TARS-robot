@@ -128,9 +128,9 @@ static bool _VisionData__cdr_deserialize(
     cdr >> cdrSize;
     size_t size = static_cast<size_t>(cdrSize);
     if (ros_message->distance_array.data) {
-      rosidl_runtime_c__double__Sequence__fini(&ros_message->distance_array);
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->distance_array);
     }
-    if (!rosidl_runtime_c__double__Sequence__init(&ros_message->distance_array, size)) {
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->distance_array, size)) {
       fprintf(stderr, "failed to create array for field 'distance_array'");
       return false;
     }
@@ -231,9 +231,9 @@ size_t max_serialized_size_robot_interfaces__msg__VisionData(
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   size_t ret_val = current_alignment - initial_alignment;

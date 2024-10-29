@@ -1,0 +1,463 @@
+[0.000000] (-) TimerEvent: {}
+[0.000650] (-) JobUnselected: {'identifier': 'action_tutorials_interfaces'}
+[0.000901] (-) JobUnselected: {'identifier': 'my_package'}
+[0.000988] (-) JobUnselected: {'identifier': 'py_pubsub'}
+[0.001045] (-) JobUnselected: {'identifier': 'py_robottest'}
+[0.001101] (-) JobUnselected: {'identifier': 'py_srvcli'}
+[0.001157] (-) JobUnselected: {'identifier': 'python_parameters'}
+[0.001213] (-) JobUnselected: {'identifier': 'robot_system'}
+[0.001268] (-) JobUnselected: {'identifier': 'tutorial_interfaces'}
+[0.001327] (robot_interfaces) JobQueued: {'identifier': 'robot_interfaces', 'dependencies': OrderedDict()}
+[0.001689] (robot_interfaces) JobStarted: {'identifier': 'robot_interfaces'}
+[0.011779] (robot_interfaces) JobProgress: {'identifier': 'robot_interfaces', 'progress': 'cmake'}
+[0.013311] (robot_interfaces) JobProgress: {'identifier': 'robot_interfaces', 'progress': 'build'}
+[0.013417] (robot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/drymer/ros2_ws/build/robot_interfaces', '--', '-j12', '-l12'], 'cwd': '/home/drymer/ros2_ws/build/robot_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'drymer'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/drymer/ros2_ws/install/tutorial_interfaces/lib:/home/drymer/ros2_ws/install/turtlesim/lib:/home/drymer/ros2_ws/install/robot_interfaces/lib:/home/drymer/ros2_ws/install/action_tutorials_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/drymer'), ('OLDPWD', '/home/drymer'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/drymer/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'drymer'), ('NAME', 'DESKTOP-8BEHH3U'), ('WSL_INTEROP', '/run/WSL/7985_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/home/drymer/.local/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/drymer/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.3.24.0_x64__8wekyb3d8bbwe:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Razer Chroma SDK/bin:/mnt/c/Program Files/Razer Chroma SDK/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/ProgramData/anaconda3/envs/Webots:/mnt/c/Users/dougr/AppData/Local/Programs/Python/Python38-32/Scripts/:/mnt/c/Users/dougr/AppData/Local/Programs/Python/Python38-32/:/mnt/c/Users/dougr/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/PyCharm 2019.3.2/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/CraftOS-PC:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/National Instruments/Shared/LabVIEW CLI:/mnt/c/Program Files (x86)/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/IVI Foundation/IVI/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Calibre2/:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Program Files/anaconda3:/mnt/c/ProgramData/anaconda3/Scripts/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/JetBrains/PyCharm 2024.2.1/bin:/mnt/c/ProgramData/anaconda3/envs/Webots:/mnt/c/Users/dougr/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/dougr/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/dougr/AppData/Local/Programs/Python/Python310:/mnt/c/Users/dougr/AppData/Local/Programs/Python/Python310/Scripts:/mnt/c/Program Files/qemu:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/drymer/ros2_ws/install/py_srvcli:/home/drymer/ros2_ws/install/py_pubsub:/home/drymer/ros2_ws/install/tutorial_interfaces:/home/drymer/ros2_ws/install/turtlesim:/home/drymer/ros2_ws/install/robot_system:/home/drymer/ros2_ws/install/py_robottest:/home/drymer/ros2_ws/install/robot_interfaces:/home/drymer/ros2_ws/install/python_parameters:/home/drymer/ros2_ws/install/my_package:/home/drymer/ros2_ws/install/action_tutorials_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/drymer/ros2_ws/build/robot_interfaces'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/drymer/ros2_ws/install/py_srvcli/lib/python3.10/site-packages:/home/drymer/ros2_ws/install/py_pubsub/lib/python3.10/site-packages:/home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:/home/drymer/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/home/drymer/ros2_ws/install/robot_system/lib/python3.10/site-packages:/home/drymer/ros2_ws/install/py_robottest/lib/python3.10/site-packages:/home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages:/home/drymer/ros2_ws/install/python_parameters/lib/python3.10/site-packages:/home/drymer/ros2_ws/install/my_package/lib/python3.10/site-packages:/home/drymer/ros2_ws/install/action_tutorials_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/drymer/ros2_ws/install/tutorial_interfaces:/home/drymer/ros2_ws/install/turtlesim:/home/drymer/ros2_ws/install/robot_interfaces:/home/drymer/ros2_ws/install/action_tutorials_interfaces:/home/drymer/ros2_ws/install/py_srvcli:/home/drymer/ros2_ws/install/py_pubsub:/home/drymer/ros2_ws/install/robot_system:/home/drymer/ros2_ws/install/py_robottest:/home/drymer/ros2_ws/install/python_parameters:/home/drymer/ros2_ws/install/my_package:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.044047] (robot_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099005] (-) TimerEvent: {}
+[0.198420] (robot_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.199142] (-) TimerEvent: {}
+[0.279056] (robot_interfaces) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.299313] (-) TimerEvent: {}
+[0.399661] (-) TimerEvent: {}
+[0.500013] (-) TimerEvent: {}
+[0.564814] (robot_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.568266] (robot_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.575951] (robot_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.589007] (robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.600122] (-) TimerEvent: {}
+[0.605890] (robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.653538] (robot_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.700202] (-) TimerEvent: {}
+[0.800528] (-) TimerEvent: {}
+[0.900845] (-) TimerEvent: {}
+[0.945414] (robot_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.000957] (-) TimerEvent: {}
+[1.101251] (-) TimerEvent: {}
+[1.201562] (-) TimerEvent: {}
+[1.301877] (-) TimerEvent: {}
+[1.328731] (robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.401980] (-) TimerEvent: {}
+[1.475907] (robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.502111] (-) TimerEvent: {}
+[1.502550] (robot_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.529600] (robot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.529827] (robot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.529910] (robot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.558459] (robot_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.559518] (robot_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.562820] (robot_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.602224] (-) TimerEvent: {}
+[1.605995] (robot_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[1.609408] (robot_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/drymer/ros2_ws/build/robot_interfaces\n'}
+[1.637437] (robot_interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.648423] (robot_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.662270] (robot_interfaces) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_robot_interfaces\n'}
+[1.702357] (-) TimerEvent: {}
+[1.802735] (-) TimerEvent: {}
+[1.903086] (-) TimerEvent: {}
+[2.003458] (-) TimerEvent: {}
+[2.103857] (-) TimerEvent: {}
+[2.105890] (robot_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[2.107228] (robot_interfaces) StdoutLine: {'line': b'writing robot_interfaces.egg-info/PKG-INFO\n'}
+[2.107704] (robot_interfaces) StdoutLine: {'line': b'writing dependency_links to robot_interfaces.egg-info/dependency_links.txt\n'}
+[2.108134] (robot_interfaces) StdoutLine: {'line': b'writing top-level names to robot_interfaces.egg-info/top_level.txt\n'}
+[2.111262] (robot_interfaces) StdoutLine: {'line': b"reading manifest file 'robot_interfaces.egg-info/SOURCES.txt'\n"}
+[2.112241] (robot_interfaces) StdoutLine: {'line': b"writing manifest file 'robot_interfaces.egg-info/SOURCES.txt'\n"}
+[2.155243] (robot_interfaces) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_robot_interfaces_egg\n'}
+[2.203925] (-) TimerEvent: {}
+[2.304279] (-) TimerEvent: {}
+[2.404626] (-) TimerEvent: {}
+[2.504991] (-) TimerEvent: {}
+[2.595598] (robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_generator_c\x1b[0m\n'}
+[2.605132] (-) TimerEvent: {}
+[2.607649] (robot_interfaces) StdoutLine: {'line': b'[  3%] Built target robot_interfaces__cpp\n'}
+[2.615659] (robot_interfaces) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/motor_feedback__functions.c.o\x1b[0m\n'}
+[2.616840] (robot_interfaces) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/action/detail/motor_control__functions.c.o\x1b[0m\n'}
+[2.618063] (robot_interfaces) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/stereo_images__functions.c.o\x1b[0m\n'}
+[2.618815] (robot_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/controller_command__functions.c.o\x1b[0m\n'}
+[2.619429] (robot_interfaces) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/vision_data__functions.c.o\x1b[0m\n'}
+[2.625985] (robot_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.626690] (robot_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.626903] (robot_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.705290] (-) TimerEvent: {}
+[2.805832] (-) TimerEvent: {}
+[2.897291] (robot_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32m\x1b[1mLinking C shared library librobot_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[2.905971] (-) TimerEvent: {}
+[3.006436] (-) TimerEvent: {}
+[3.106852] (-) TimerEvent: {}
+[3.159459] (robot_interfaces) StdoutLine: {'line': b'[ 17%] Built target robot_interfaces__rosidl_generator_c\n'}
+[3.177575] (robot_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.179107] (robot_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.179631] (robot_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.206980] (-) TimerEvent: {}
+[3.307463] (-) TimerEvent: {}
+[3.407891] (-) TimerEvent: {}
+[3.431223] (robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[3.467265] (robot_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/msg/motor_feedback__type_support.cpp.o\x1b[0m\n'}
+[3.467606] (robot_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/action/motor_control__type_support.cpp.o\x1b[0m\n'}
+[3.469123] (robot_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/msg/controller_command__type_support.cpp.o\x1b[0m\n'}
+[3.470493] (robot_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/msg/vision_data__type_support.cpp.o\x1b[0m\n'}
+[3.472811] (robot_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/msg/stereo_images__type_support.cpp.o\x1b[0m\n'}
+[3.508045] (-) TimerEvent: {}
+[3.608522] (-) TimerEvent: {}
+[3.696131] (robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[3.708693] (-) TimerEvent: {}
+[3.745661] (robot_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/motor_feedback__type_support.cpp.o\x1b[0m\n'}
+[3.750913] (robot_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/vision_data__type_support.cpp.o\x1b[0m\n'}
+[3.755171] (robot_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/action/detail/motor_control__type_support.cpp.o\x1b[0m\n'}
+[3.808845] (-) TimerEvent: {}
+[3.909856] (-) TimerEvent: {}
+[4.011619] (-) TimerEvent: {}
+[4.112050] (-) TimerEvent: {}
+[4.212544] (-) TimerEvent: {}
+[4.278125] (robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[4.312759] (-) TimerEvent: {}
+[4.326480] (robot_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/controller_command__type_support.cpp.o\x1b[0m\n'}
+[4.327955] (robot_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/msg/detail/dds_fastrtps/motor_feedback__type_support.cpp.o\x1b[0m\n'}
+[4.342155] (robot_interfaces) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/action/detail/dds_fastrtps/motor_control__type_support.cpp.o\x1b[0m\n'}
+[4.345006] (robot_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/msg/detail/dds_fastrtps/vision_data__type_support.cpp.o\x1b[0m\n'}
+[4.414294] (-) TimerEvent: {}
+[4.441012] (robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[4.466736] (robot_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/msg/detail/dds_fastrtps/controller_command__type_support.cpp.o\x1b[0m\n'}
+[4.467206] (robot_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/msg/motor_feedback__type_support.cpp.o\x1b[0m\n'}
+[4.514392] (-) TimerEvent: {}
+[4.580279] (robot_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/action/motor_control__type_support.cpp.o\x1b[0m\n'}
+[4.615850] (-) TimerEvent: {}
+[4.716802] (-) TimerEvent: {}
+[4.744534] (robot_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/msg/vision_data__type_support.cpp.o\x1b[0m\n'}
+[4.816925] (-) TimerEvent: {}
+[4.841825] (robot_interfaces) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/msg/controller_command__type_support.cpp.o\x1b[0m\n'}
+[4.889160] (robot_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.917051] (-) TimerEvent: {}
+[4.929592] (robot_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/msg/stereo_images__type_support.cpp.o\x1b[0m\n'}
+[5.017163] (-) TimerEvent: {}
+[5.027569] (robot_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[5.117325] (-) TimerEvent: {}
+[5.218449] (robot_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/stereo_images__type_support.cpp.o\x1b[0m\n'}
+[5.218801] (-) TimerEvent: {}
+[5.260329] (robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[5.269112] (robot_interfaces) StdoutLine: {'line': b'[ 55%] Built target robot_interfaces__rosidl_typesupport_cpp\n'}
+[5.292801] (robot_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/msg/detail/dds_fastrtps/stereo_images__type_support.cpp.o\x1b[0m\n'}
+[5.317772] (robot_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/msg/detail/motor_feedback__type_support.c.o\x1b[0m\n'}
+[5.318893] (-) TimerEvent: {}
+[5.378159] (robot_interfaces) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/action/detail/motor_control__type_support.c.o\x1b[0m\n'}
+[5.404859] (robot_interfaces) StdoutLine: {'line': b'[ 60%] Built target robot_interfaces__rosidl_typesupport_c\n'}
+[5.419030] (-) TimerEvent: {}
+[5.443622] (robot_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/msg/detail/controller_command__type_support.c.o\x1b[0m\n'}
+[5.451267] (robot_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/msg/detail/vision_data__type_support.c.o\x1b[0m\n'}
+[5.474335] (robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[5.519155] (-) TimerEvent: {}
+[5.529475] (robot_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/msg/detail/stereo_images__type_support.c.o\x1b[0m\n'}
+[5.543575] (robot_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/motor_feedback__type_support_c.cpp.o\x1b[0m\n'}
+[5.557731] (robot_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/action/detail/motor_control__type_support_c.cpp.o\x1b[0m\n'}
+[5.584186] (robot_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/vision_data__type_support_c.cpp.o\x1b[0m\n'}
+[5.619285] (-) TimerEvent: {}
+[5.634884] (robot_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/controller_command__type_support_c.cpp.o\x1b[0m\n'}
+[5.662161] (robot_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking C shared library librobot_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.719419] (-) TimerEvent: {}
+[5.820162] (-) TimerEvent: {}
+[5.826047] (robot_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/stereo_images__type_support_c.cpp.o\x1b[0m\n'}
+[5.920291] (-) TimerEvent: {}
+[6.020748] (-) TimerEvent: {}
+[6.103515] (robot_interfaces) StdoutLine: {'line': b'[ 74%] Built target robot_interfaces__rosidl_typesupport_introspection_c\n'}
+[6.120917] (-) TimerEvent: {}
+[6.221791] (-) TimerEvent: {}
+[6.322232] (-) TimerEvent: {}
+[6.422646] (-) TimerEvent: {}
+[6.523104] (-) TimerEvent: {}
+[6.623555] (-) TimerEvent: {}
+[6.655731] (robot_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[6.680977] (robot_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[6.723699] (-) TimerEvent: {}
+[6.752419] (robot_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[6.823850] (-) TimerEvent: {}
+[6.924338] (-) TimerEvent: {}
+[6.941612] (robot_interfaces) StdoutLine: {'line': b'[ 79%] Built target robot_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[7.021834] (robot_interfaces) StdoutLine: {'line': b'[ 79%] Built target robot_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[7.024431] (-) TimerEvent: {}
+[7.057388] (robot_interfaces) StdoutLine: {'line': b'[ 79%] Built target robot_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[7.086767] (robot_interfaces) StdoutLine: {'line': b'[ 79%] Built target robot_interfaces\n'}
+[7.116120] (robot_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[7.124587] (-) TimerEvent: {}
+[7.225351] (-) TimerEvent: {}
+[7.325794] (-) TimerEvent: {}
+[7.426262] (-) TimerEvent: {}
+[7.526606] (-) TimerEvent: {}
+[7.626904] (-) TimerEvent: {}
+[7.727226] (-) TimerEvent: {}
+[7.827524] (-) TimerEvent: {}
+[7.927890] (-) TimerEvent: {}
+[8.028244] (-) TimerEvent: {}
+[8.128615] (-) TimerEvent: {}
+[8.228972] (-) TimerEvent: {}
+[8.329296] (-) TimerEvent: {}
+[8.429604] (-) TimerEvent: {}
+[8.521383] (robot_interfaces) StdoutLine: {'line': b'[ 80%] Built target robot_interfaces__py\n'}
+[8.529736] (-) TimerEvent: {}
+[8.535687] (robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_generator_py\x1b[0m\n'}
+[8.555948] (robot_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/action/_motor_control_s.c.o\x1b[0m\n'}
+[8.556443] (robot_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/msg/_controller_command_s.c.o\x1b[0m\n'}
+[8.557923] (robot_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/msg/_motor_feedback_s.c.o\x1b[0m\n'}
+[8.558329] (robot_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/msg/_vision_data_s.c.o\x1b[0m\n'}
+[8.559358] (robot_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/msg/_stereo_images_s.c.o\x1b[0m\n'}
+[8.629889] (-) TimerEvent: {}
+[8.730322] (-) TimerEvent: {}
+[8.791729] (robot_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_interfaces/librobot_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[8.830441] (-) TimerEvent: {}
+[8.930789] (-) TimerEvent: {}
+[9.011830] (robot_interfaces) StdoutLine: {'line': b'[ 90%] Built target robot_interfaces__rosidl_generator_py\n'}
+[9.028819] (robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[9.029917] (robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[9.030396] (robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[9.030873] (-) TimerEvent: {}
+[9.051537] (robot_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[9.051801] (robot_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[9.051990] (robot_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[9.131000] (-) TimerEvent: {}
+[9.231344] (-) TimerEvent: {}
+[9.245926] (robot_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[9.264312] (robot_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[9.266111] (robot_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[9.331461] (-) TimerEvent: {}
+[9.431886] (-) TimerEvent: {}
+[9.435228] (robot_interfaces) StdoutLine: {'line': b'[100%] Built target robot_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[9.438157] (robot_interfaces) StdoutLine: {'line': b'[100%] Built target robot_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[9.438667] (robot_interfaces) StdoutLine: {'line': b'[100%] Built target robot_interfaces__rosidl_typesupport_c__pyext\n'}
+[9.453534] (robot_interfaces) CommandEnded: {'returncode': 0}
+[9.531984] (-) TimerEvent: {}
+[9.628398] (robot_interfaces) JobProgress: {'identifier': 'robot_interfaces', 'progress': 'install'}
+[9.632077] (-) TimerEvent: {}
+[9.637903] (robot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/drymer/ros2_ws/build/robot_interfaces'], 'cwd': '/home/drymer/ros2_ws/build/robot_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'drymer'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/drymer/ros2_ws/install/tutorial_interfaces/lib:/home/drymer/ros2_ws/install/turtlesim/lib:/home/drymer/ros2_ws/install/robot_interfaces/lib:/home/drymer/ros2_ws/install/action_tutorials_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/drymer'), ('OLDPWD', '/home/drymer'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/drymer/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'drymer'), ('NAME', 'DESKTOP-8BEHH3U'), ('WSL_INTEROP', '/run/WSL/7985_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/home/drymer/.local/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/drymer/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.3.24.0_x64__8wekyb3d8bbwe:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Razer Chroma SDK/bin:/mnt/c/Program Files/Razer Chroma SDK/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/ProgramData/anaconda3/envs/Webots:/mnt/c/Users/dougr/AppData/Local/Programs/Python/Python38-32/Scripts/:/mnt/c/Users/dougr/AppData/Local/Programs/Python/Python38-32/:/mnt/c/Users/dougr/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/PyCharm 2019.3.2/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/CraftOS-PC:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/National Instruments/Shared/LabVIEW CLI:/mnt/c/Program Files (x86)/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/IVI Foundation/IVI/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Calibre2/:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Program Files/anaconda3:/mnt/c/ProgramData/anaconda3/Scripts/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/JetBrains/PyCharm 2024.2.1/bin:/mnt/c/ProgramData/anaconda3/envs/Webots:/mnt/c/Users/dougr/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/dougr/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/dougr/AppData/Local/Programs/Python/Python310:/mnt/c/Users/dougr/AppData/Local/Programs/Python/Python310/Scripts:/mnt/c/Program Files/qemu:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/drymer/ros2_ws/install/py_srvcli:/home/drymer/ros2_ws/install/py_pubsub:/home/drymer/ros2_ws/install/tutorial_interfaces:/home/drymer/ros2_ws/install/turtlesim:/home/drymer/ros2_ws/install/robot_system:/home/drymer/ros2_ws/install/py_robottest:/home/drymer/ros2_ws/install/robot_interfaces:/home/drymer/ros2_ws/install/python_parameters:/home/drymer/ros2_ws/install/my_package:/home/drymer/ros2_ws/install/action_tutorials_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/drymer/ros2_ws/build/robot_interfaces'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/drymer/ros2_ws/install/py_srvcli/lib/python3.10/site-packages:/home/drymer/ros2_ws/install/py_pubsub/lib/python3.10/site-packages:/home/drymer/ros2_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:/home/drymer/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/home/drymer/ros2_ws/install/robot_system/lib/python3.10/site-packages:/home/drymer/ros2_ws/install/py_robottest/lib/python3.10/site-packages:/home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages:/home/drymer/ros2_ws/install/python_parameters/lib/python3.10/site-packages:/home/drymer/ros2_ws/install/my_package/lib/python3.10/site-packages:/home/drymer/ros2_ws/install/action_tutorials_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/drymer/ros2_ws/install/tutorial_interfaces:/home/drymer/ros2_ws/install/turtlesim:/home/drymer/ros2_ws/install/robot_interfaces:/home/drymer/ros2_ws/install/action_tutorials_interfaces:/home/drymer/ros2_ws/install/py_srvcli:/home/drymer/ros2_ws/install/py_pubsub:/home/drymer/ros2_ws/install/robot_system:/home/drymer/ros2_ws/install/py_robottest:/home/drymer/ros2_ws/install/python_parameters:/home/drymer/ros2_ws/install/my_package:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[9.645294] (robot_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.645492] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/ament_index/resource_index/rosidl_interfaces/robot_interfaces\n'}
+[9.645752] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[9.645838] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action\n'}
+[9.646002] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action/detail\n'}
+[9.646113] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action/detail/motor_control__functions.c\n'}
+[9.646413] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action/detail/motor_control__functions.h\n'}
+[9.646521] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action/detail/motor_control__type_support.h\n'}
+[9.646886] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action/detail/motor_control__struct.h\n'}
+[9.647139] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action/motor_control.h\n'}
+[9.647236] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[9.647351] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/controller_command.h\n'}
+[9.647717] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/motor_feedback.h\n'}
+[9.647857] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[9.648105] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/controller_command__struct.h\n'}
+[9.648193] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/vision_data__functions.c\n'}
+[9.648393] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/motor_feedback__functions.c\n'}
+[9.648633] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/vision_data__functions.h\n'}
+[9.648717] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/vision_data__struct.h\n'}
+[9.648945] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/vision_data__type_support.h\n'}
+[9.649095] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/controller_command__functions.c\n'}
+[9.649306] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/controller_command__functions.h\n'}
+[9.649498] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/stereo_images__functions.h\n'}
+[9.649695] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/controller_command__type_support.h\n'}
+[9.649886] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/motor_feedback__struct.h\n'}
+[9.650073] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/motor_feedback__type_support.h\n'}
+[9.650260] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/stereo_images__struct.h\n'}
+[9.650444] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/stereo_images__type_support.h\n'}
+[9.650620] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/stereo_images__functions.c\n'}
+[9.650932] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/motor_feedback__functions.h\n'}
+[9.651047] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/stereo_images.h\n'}
+[9.651215] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[9.651465] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/vision_data.h\n'}
+[9.651672] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/environment/library_path.sh\n'}
+[9.651888] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/environment/library_path.dsv\n'}
+[9.652164] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_c.so\n'}
+[9.652430] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/drymer/ros2_ws/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_c.so" to ""\n'}
+[9.652519] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[9.652588] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action\n'}
+[9.652844] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action/detail\n'}
+[9.652946] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action/detail/motor_control__rosidl_typesupport_fastrtps_c.h\n'}
+[9.653019] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[9.653086] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[9.653150] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/stereo_images__rosidl_typesupport_fastrtps_c.h\n'}
+[9.653416] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/motor_feedback__rosidl_typesupport_fastrtps_c.h\n'}
+[9.653773] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/vision_data__rosidl_typesupport_fastrtps_c.h\n'}
+[9.654118] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/controller_command__rosidl_typesupport_fastrtps_c.h\n'}
+[9.654361] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[9.654560] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[9.654916] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/drymer/ros2_ws/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[9.655349] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[9.655556] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action\n'}
+[9.655788] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action/motor_control.hpp\n'}
+[9.656164] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action/detail\n'}
+[9.656369] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action/detail/motor_control__struct.hpp\n'}
+[9.656572] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action/detail/motor_control__traits.hpp\n'}
+[9.656874] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action/detail/motor_control__builder.hpp\n'}
+[9.657147] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[9.657346] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[9.657623] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/stereo_images__struct.hpp\n'}
+[9.657711] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/controller_command__traits.hpp\n'}
+[9.657876] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/stereo_images__traits.hpp\n'}
+[9.658071] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/motor_feedback__builder.hpp\n'}
+[9.658277] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/motor_feedback__struct.hpp\n'}
+[9.658469] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/vision_data__traits.hpp\n'}
+[9.658661] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/controller_command__builder.hpp\n'}
+[9.658854] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/motor_feedback__traits.hpp\n'}
+[9.659046] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/controller_command__struct.hpp\n'}
+[9.659288] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/vision_data__struct.hpp\n'}
+[9.659508] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/stereo_images__builder.hpp\n'}
+[9.659948] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/vision_data__builder.hpp\n'}
+[9.660166] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/controller_command.hpp\n'}
+[9.660381] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/motor_feedback.hpp\n'}
+[9.660592] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/vision_data.hpp\n'}
+[9.660837] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/stereo_images.hpp\n'}
+[9.661279] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[9.661459] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action\n'}
+[9.661655] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action/detail\n'}
+[9.661848] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action/detail/dds_fastrtps\n'}
+[9.662205] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action/detail/motor_control__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[9.662296] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[9.662534] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[9.662625] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[9.662697] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/controller_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[9.662767] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/dds_fastrtps\n'}
+[9.662840] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/stereo_images__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[9.663089] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/motor_feedback__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[9.663359] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/vision_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[9.663478] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[9.663591] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/drymer/ros2_ws/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[9.664082] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[9.664324] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action\n'}
+[9.664597] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action/detail\n'}
+[9.664904] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action/detail/motor_control__rosidl_typesupport_introspection_c.h\n'}
+[9.665152] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action/detail/motor_control__type_support.c\n'}
+[9.665494] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[9.665822] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[9.665904] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/controller_command__rosidl_typesupport_introspection_c.h\n'}
+[9.665973] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/motor_feedback__rosidl_typesupport_introspection_c.h\n'}
+[9.666040] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/vision_data__type_support.c\n'}
+[9.666268] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/stereo_images__rosidl_typesupport_introspection_c.h\n'}
+[9.666344] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/vision_data__rosidl_typesupport_introspection_c.h\n'}
+[9.666412] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/motor_feedback__type_support.c\n'}
+[9.666477] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/stereo_images__type_support.c\n'}
+[9.666541] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/controller_command__type_support.c\n'}
+[9.666605] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[9.666669] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[9.666773] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/drymer/ros2_ws/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[9.667049] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_c.so\n'}
+[9.667176] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/drymer/ros2_ws/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[9.667248] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[9.667327] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action\n'}
+[9.667394] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action/detail\n'}
+[9.667459] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action/detail/motor_control__rosidl_typesupport_introspection_cpp.hpp\n'}
+[9.667526] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/action/detail/motor_control__type_support.cpp\n'}
+[9.667839] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[9.668037] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[9.668274] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/motor_feedback__type_support.cpp\n'}
+[9.668386] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/motor_feedback__rosidl_typesupport_introspection_cpp.hpp\n'}
+[9.668587] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/controller_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[9.668800] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/controller_command__type_support.cpp\n'}
+[9.668996] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/vision_data__type_support.cpp\n'}
+[9.669192] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/vision_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[9.669385] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/stereo_images__type_support.cpp\n'}
+[9.669578] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/stereo_images__rosidl_typesupport_introspection_cpp.hpp\n'}
+[9.669773] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[9.669967] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/drymer/ros2_ws/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[9.670160] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_cpp.so\n'}
+[9.670352] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/drymer/ros2_ws/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[9.670545] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/environment/pythonpath.sh\n'}
+[9.670749] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/environment/pythonpath.dsv\n'}
+[9.670942] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info\n'}
+[9.671134] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[9.671328] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[9.671674] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[9.671881] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[9.672080] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces\n'}
+[9.672367] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/__init__.py\n'}
+[9.672575] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/action\n'}
+[9.672665] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/action/__init__.py\n'}
+[9.672865] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/action/_motor_control.py\n'}
+[9.672962] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/action/_motor_control_s.c\n'}
+[9.673034] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[9.673106] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.673175] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/librobot_interfaces__rosidl_generator_py.so\n'}
+[9.673241] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[9.673306] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.673371] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg\n'}
+[9.673457] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_controller_command.py\n'}
+[9.673538] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/__init__.py\n'}
+[9.673606] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_controller_command_s.c\n'}
+[9.673672] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_motor_feedback_s.c\n'}
+[9.673737] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_vision_data.py\n'}
+[9.673803] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_stereo_images.py\n'}
+[9.673868] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_motor_feedback.py\n'}
+[9.673932] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_stereo_images_s.c\n'}
+[9.673995] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_vision_data_s.c\n'}
+[9.674059] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[9.674130] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.725337] (robot_interfaces) StdoutLine: {'line': b"Listing '/home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces'...\n"}
+[9.725509] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/__init__.py'...\n"}
+[9.725595] (robot_interfaces) StdoutLine: {'line': b"Listing '/home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/action'...\n"}
+[9.725670] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/action/__init__.py'...\n"}
+[9.725742] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/action/_motor_control.py'...\n"}
+[9.725812] (robot_interfaces) StdoutLine: {'line': b"Listing '/home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg'...\n"}
+[9.725882] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/__init__.py'...\n"}
+[9.725951] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_controller_command.py'...\n"}
+[9.726019] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_motor_feedback.py'...\n"}
+[9.726087] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_stereo_images.py'...\n"}
+[9.726217] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_vision_data.py'...\n"}
+[9.730571] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.731075] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[9.731357] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.731864] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[9.732114] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.732217] (-) TimerEvent: {}
+[9.732727] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/drymer/ros2_ws/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[9.732999] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_py.so\n'}
+[9.733671] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/drymer/ros2_ws/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_py.so" to ""\n'}
+[9.733961] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/msg/MotorFeedback.idl\n'}
+[9.734323] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/action/MotorControl.idl\n'}
+[9.734565] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/msg/VisionData.idl\n'}
+[9.734865] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/msg/ControllerCommand.idl\n'}
+[9.734982] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/msg/StereoImages.idl\n'}
+[9.735061] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/msg/MotorFeedback.msg\n'}
+[9.735244] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/action/MotorControl.action\n'}
+[9.735494] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/msg/VisionData.msg\n'}
+[9.735696] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/msg/ControllerCommand.msg\n'}
+[9.735862] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/msg/StereoImages.msg\n'}
+[9.736009] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/ament_index/resource_index/package_run_dependencies/robot_interfaces\n'}
+[9.736337] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/ament_index/resource_index/parent_prefix_path/robot_interfaces\n'}
+[9.736525] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/environment/ament_prefix_path.sh\n'}
+[9.736927] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/environment/ament_prefix_path.dsv\n'}
+[9.737106] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/environment/path.sh\n'}
+[9.737358] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/environment/path.dsv\n'}
+[9.737530] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/local_setup.bash\n'}
+[9.737621] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/local_setup.sh\n'}
+[9.737823] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/local_setup.zsh\n'}
+[9.738003] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/local_setup.dsv\n'}
+[9.738153] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/package.dsv\n'}
+[9.738295] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/ament_index/resource_index/packages/robot_interfaces\n'}
+[9.738525] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cExport.cmake\n'}
+[9.738803] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[9.738905] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[9.738987] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[9.739061] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cppExport.cmake\n'}
+[9.739133] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[9.739204] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[9.739274] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[9.739348] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[9.739452] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[9.739524] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[9.739593] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[9.739697] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[9.739772] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[9.739844] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[9.739915] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_pyExport.cmake\n'}
+[9.740022] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[9.740099] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[9.740240] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[9.740379] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[9.740569] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[9.740742] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[9.740866] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[9.741004] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[9.741543] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfacesConfig.cmake\n'}
+[9.742302] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfacesConfig-version.cmake\n'}
+[9.743731] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/drymer/ros2_ws/install/robot_interfaces/share/robot_interfaces/package.xml\n'}
+[9.744154] (robot_interfaces) CommandEnded: {'returncode': 0}
+[9.832339] (-) TimerEvent: {}
+[9.932929] (-) TimerEvent: {}
+[9.945340] (robot_interfaces) JobEnded: {'identifier': 'robot_interfaces', 'rc': 0}
+[9.947423] (-) EventReactorShutdown: {}

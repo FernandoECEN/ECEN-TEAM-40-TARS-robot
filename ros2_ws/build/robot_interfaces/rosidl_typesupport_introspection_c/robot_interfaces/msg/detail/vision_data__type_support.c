@@ -95,56 +95,56 @@ bool robot_interfaces__msg__VisionData__rosidl_typesupport_introspection_c__resi
 size_t robot_interfaces__msg__VisionData__rosidl_typesupport_introspection_c__size_function__VisionData__distance_array(
   const void * untyped_member)
 {
-  const rosidl_runtime_c__double__Sequence * member =
-    (const rosidl_runtime_c__double__Sequence *)(untyped_member);
+  const rosidl_runtime_c__float__Sequence * member =
+    (const rosidl_runtime_c__float__Sequence *)(untyped_member);
   return member->size;
 }
 
 const void * robot_interfaces__msg__VisionData__rosidl_typesupport_introspection_c__get_const_function__VisionData__distance_array(
   const void * untyped_member, size_t index)
 {
-  const rosidl_runtime_c__double__Sequence * member =
-    (const rosidl_runtime_c__double__Sequence *)(untyped_member);
+  const rosidl_runtime_c__float__Sequence * member =
+    (const rosidl_runtime_c__float__Sequence *)(untyped_member);
   return &member->data[index];
 }
 
 void * robot_interfaces__msg__VisionData__rosidl_typesupport_introspection_c__get_function__VisionData__distance_array(
   void * untyped_member, size_t index)
 {
-  rosidl_runtime_c__double__Sequence * member =
-    (rosidl_runtime_c__double__Sequence *)(untyped_member);
+  rosidl_runtime_c__float__Sequence * member =
+    (rosidl_runtime_c__float__Sequence *)(untyped_member);
   return &member->data[index];
 }
 
 void robot_interfaces__msg__VisionData__rosidl_typesupport_introspection_c__fetch_function__VisionData__distance_array(
   const void * untyped_member, size_t index, void * untyped_value)
 {
-  const double * item =
-    ((const double *)
+  const float * item =
+    ((const float *)
     robot_interfaces__msg__VisionData__rosidl_typesupport_introspection_c__get_const_function__VisionData__distance_array(untyped_member, index));
-  double * value =
-    (double *)(untyped_value);
+  float * value =
+    (float *)(untyped_value);
   *value = *item;
 }
 
 void robot_interfaces__msg__VisionData__rosidl_typesupport_introspection_c__assign_function__VisionData__distance_array(
   void * untyped_member, size_t index, const void * untyped_value)
 {
-  double * item =
-    ((double *)
+  float * item =
+    ((float *)
     robot_interfaces__msg__VisionData__rosidl_typesupport_introspection_c__get_function__VisionData__distance_array(untyped_member, index));
-  const double * value =
-    (const double *)(untyped_value);
+  const float * value =
+    (const float *)(untyped_value);
   *item = *value;
 }
 
 bool robot_interfaces__msg__VisionData__rosidl_typesupport_introspection_c__resize_function__VisionData__distance_array(
   void * untyped_member, size_t size)
 {
-  rosidl_runtime_c__double__Sequence * member =
-    (rosidl_runtime_c__double__Sequence *)(untyped_member);
-  rosidl_runtime_c__double__Sequence__fini(member);
-  return rosidl_runtime_c__double__Sequence__init(member, size);
+  rosidl_runtime_c__float__Sequence * member =
+    (rosidl_runtime_c__float__Sequence *)(untyped_member);
+  rosidl_runtime_c__float__Sequence__fini(member);
+  return rosidl_runtime_c__float__Sequence__init(member, size);
 }
 
 static rosidl_typesupport_introspection_c__MessageMember robot_interfaces__msg__VisionData__rosidl_typesupport_introspection_c__VisionData_message_member_array[2] = {
@@ -167,7 +167,7 @@ static rosidl_typesupport_introspection_c__MessageMember robot_interfaces__msg__
   },
   {
     "distance_array",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     true,  // is array

@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_typesupport_cpp/robot_interfaces/action/motor_control__type_support.cpp" "CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/action/motor_control__type_support.cpp.o" "gcc" "CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/action/motor_control__type_support.cpp.o.d"
   "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_typesupport_cpp/robot_interfaces/msg/controller_command__type_support.cpp" "CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/msg/controller_command__type_support.cpp.o" "gcc" "CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/msg/controller_command__type_support.cpp.o.d"
   "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_typesupport_cpp/robot_interfaces/msg/motor_feedback__type_support.cpp" "CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/msg/motor_feedback__type_support.cpp.o" "gcc" "CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/msg/motor_feedback__type_support.cpp.o.d"
+  "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_typesupport_cpp/robot_interfaces/msg/stereo_images__type_support.cpp" "CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/msg/stereo_images__type_support.cpp.o" "gcc" "CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/msg/stereo_images__type_support.cpp.o.d"
   "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_typesupport_cpp/robot_interfaces/msg/vision_data__type_support.cpp" "CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/msg/vision_data__type_support.cpp.o" "gcc" "CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/msg/vision_data__type_support.cpp.o.d"
   )
 
@@ -18,6 +19,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_typesupport_cpp/robot_interfaces/action/motor_control__type_support.cpp" "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_typesupport_cpp/robot_interfaces/msg/motor_feedback__type_support.cpp"
   "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_typesupport_cpp/robot_interfaces/msg/controller_command__type_support.cpp" "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_typesupport_cpp/robot_interfaces/msg/motor_feedback__type_support.cpp"
+  "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_typesupport_cpp/robot_interfaces/msg/stereo_images__type_support.cpp" "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_typesupport_cpp/robot_interfaces/msg/motor_feedback__type_support.cpp"
   "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_typesupport_cpp/robot_interfaces/msg/vision_data__type_support.cpp" "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_typesupport_cpp/robot_interfaces/msg/motor_feedback__type_support.cpp"
   )
 

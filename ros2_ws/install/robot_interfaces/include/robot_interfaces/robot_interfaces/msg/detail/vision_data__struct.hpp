@@ -49,7 +49,7 @@ struct VisionData_
     std::vector<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>>;
   _ai_detect_array_type ai_detect_array;
   using _distance_array_type =
-    std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>>;
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
   _distance_array_type distance_array;
 
   // setters for named parameter idiom
@@ -60,7 +60,7 @@ struct VisionData_
     return *this;
   }
   Type & set__distance_array(
-    const std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>> & _arg)
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
   {
     this->distance_array = _arg;
     return *this;

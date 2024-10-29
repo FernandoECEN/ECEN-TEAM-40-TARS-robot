@@ -70,6 +70,7 @@ CMakeFiles/robot_interfaces: /home/drymer/ros2_ws/src/robot_interfaces/msg/Motor
 CMakeFiles/robot_interfaces: /home/drymer/ros2_ws/src/robot_interfaces/action/MotorControl.action
 CMakeFiles/robot_interfaces: /home/drymer/ros2_ws/src/robot_interfaces/msg/VisionData.msg
 CMakeFiles/robot_interfaces: /home/drymer/ros2_ws/src/robot_interfaces/msg/ControllerCommand.msg
+CMakeFiles/robot_interfaces: /home/drymer/ros2_ws/src/robot_interfaces/msg/StereoImages.msg
 CMakeFiles/robot_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 CMakeFiles/robot_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
 CMakeFiles/robot_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl

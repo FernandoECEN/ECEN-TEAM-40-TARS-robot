@@ -22,6 +22,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_py/robot_interfaces/msg/_controller_command_s.c" "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_py/robot_interfaces/msg/_motor_feedback.py" "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_py/robot_interfaces/msg/_motor_feedback_s.c" "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_py/robot_interfaces/msg/_stereo_images.py" "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_py/robot_interfaces/msg/_stereo_images_s.c" "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_py/robot_interfaces/msg/_vision_data.py" "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_py/robot_interfaces/msg/_vision_data_s.c" "/home/drymer/ros2_ws/build/robot_interfaces/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   )

@@ -6,37 +6,6 @@ from robot_interfaces.action import MotorControl
 from robot_interfaces.msg import VisionData
 from robot_interfaces.msg import ControllerCommand
 
-SPIN_QUEUE = []
-PERIOD = 0.01
-motorid = 0
-motordirection = 0
-motorspeed = 0
-goal = 0
-
-class SubscriberNode(Node):
-    def __init__(self):
-        super().__init__('vision_subscriber')
-        self.visionsub = self.create_subscription(VisionData,'vision_topic',self.vision_listener_callback,10)
-        self.controllersub = self.create_subscription(ControllerCommand,'controller_topic',self.controller_listener_callback,10)
-        self.itemsdetected = ['person','bike','chair']
-        self.distances = [1.03,1.62,3.59]
-        
-    def vision_listener_callback(self, msg):
-        self.itemsdetected = msg.ai_detect_array
-        self.distances = msg.distance_array
-        self.get_logger().info(f'I heard: Items detected: {self.itemsdetected}, Distances: {self.distances}')
-        
-    def controller_listener_callback(self, msg):
-        global motorid
-        global motordirection
-        global motorspeed
-        global goal
-        motorid = msg.motor_id
-        motordirection = msg.motor_direction
-        motorspeed = msg.motor_speed
-        goal = motorspeed
-        self.get_logger().info(f'Command Recieved: {motorid} {motordirection} {motorspeed}')
-
 class MasterNode(Node):
 
     def __init__(self):
@@ -44,6 +13,9 @@ class MasterNode(Node):
         self._motor_client = ActionClient(self, MotorControl, 'motor_control')
         self.visionsub = self.create_subscription(VisionData,'vision_topic',self.vision_listener_callback,10)
         self.controllersub = self.create_subscription(ControllerCommand,'controller_topic',self.controller_listener_callback,10)
+        self.motorid = 0
+        self.motordirection = 0
+        self.motorspeed = 0
         
     def vision_listener_callback(self, msg):
         self.itemsdetected = msg.ai_detect_array
@@ -51,15 +23,11 @@ class MasterNode(Node):
         self.get_logger().info(f'I heard: Items detected: {self.itemsdetected}, Distances: {self.distances}')
         
     def controller_listener_callback(self, msg):
-        global motorid
-        global motordirection
-        global motorspeed
-        global goal
-        motorid = msg.motor_id
-        motordirection = msg.motor_direction
-        motorspeed = msg.motor_speed
-        self.get_logger().info(f'Command Recieved: {motorid} {motordirection} {motorspeed}')
-        self.send_goal(motorspeed)
+        self.motorid = msg.motor_id
+        self.motordirection = msg.motor_direction
+        self.motorspeed = msg.motor_speed
+        self.get_logger().info(f'Command Recieved: {self.motorid} {self.motordirection} {self.motorspeed}')
+        self.send_goal(self.motorspeed)
 
     def send_goal(self, moveorder):
         goal_msg = MotorControl.Goal()
@@ -92,7 +60,6 @@ class MasterNode(Node):
 
 
 def main(args=None):
-    global goal
     rclpy.init(args=args)
     
     rclpy.spin(MasterNode())

@@ -27,7 +27,7 @@ extern "C"
 typedef struct robot_interfaces__msg__VisionData
 {
   rosidl_runtime_c__String__Sequence ai_detect_array;
-  rosidl_runtime_c__double__Sequence distance_array;
+  rosidl_runtime_c__float__Sequence distance_array;
 } robot_interfaces__msg__VisionData;
 
 // Struct for a sequence of robot_interfaces__msg__VisionData.

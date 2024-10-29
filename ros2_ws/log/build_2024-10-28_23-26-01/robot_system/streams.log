@@ -1,0 +1,25 @@
+[10.669s] Invoking command in '/home/drymer/ros2_ws/src/robot_system': CMAKE_PREFIX_PATH=/home/drymer/ros2_ws/install/robot_interfaces:/home/drymer/ros2_ws/install/tutorial_interfaces:/home/drymer/ros2_ws/install/turtlesim:/home/drymer/ros2_ws/install/action_tutorials_interfaces LD_LIBRARY_PATH=/home/drymer/ros2_ws/install/robot_interfaces/lib:/home/drymer/ros2_ws/install/tutorial_interfaces/lib:/home/drymer/ros2_ws/install/turtlesim/lib:/home/drymer/ros2_ws/install/action_tutorials_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/drymer/ros2_ws/build/robot_system/prefix_override:/home/drymer/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/drymer/ros2_ws/install/robot_system/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_system build --build-base /home/drymer/ros2_ws/build/robot_system/build install --record /home/drymer/ros2_ws/build/robot_system/install.log --single-version-externally-managed install_data
+[10.884s] running egg_info
+[10.885s] writing ../../build/robot_system/robot_system.egg-info/PKG-INFO
+[10.885s] writing dependency_links to ../../build/robot_system/robot_system.egg-info/dependency_links.txt
+[10.886s] writing entry points to ../../build/robot_system/robot_system.egg-info/entry_points.txt
+[10.886s] writing requirements to ../../build/robot_system/robot_system.egg-info/requires.txt
+[10.886s] writing top-level names to ../../build/robot_system/robot_system.egg-info/top_level.txt
+[10.887s] reading manifest file '../../build/robot_system/robot_system.egg-info/SOURCES.txt'
+[10.931s] writing manifest file '../../build/robot_system/robot_system.egg-info/SOURCES.txt'
+[10.931s] running build
+[10.931s] running build_py
+[10.931s] running install
+[10.931s] running install_lib
+[10.933s] running install_data
+[10.933s] running install_egg_info
+[10.934s] removing '/home/drymer/ros2_ws/install/robot_system/lib/python3.10/site-packages/robot_system-0.0.0-py3.10.egg-info' (and everything under it)
+[10.935s] Copying ../../build/robot_system/robot_system.egg-info to /home/drymer/ros2_ws/install/robot_system/lib/python3.10/site-packages/robot_system-0.0.0-py3.10.egg-info
+[11.026s] running install_scripts
+[11.045s] Installing action script to /home/drymer/ros2_ws/install/robot_system/lib/robot_system
+[11.045s] Installing camera script to /home/drymer/ros2_ws/install/robot_system/lib/robot_system
+[11.045s] Installing client script to /home/drymer/ros2_ws/install/robot_system/lib/robot_system
+[11.046s] Installing controller script to /home/drymer/ros2_ws/install/robot_system/lib/robot_system
+[11.046s] Installing publisher script to /home/drymer/ros2_ws/install/robot_system/lib/robot_system
+[11.046s] writing list of installed files to '/home/drymer/ros2_ws/build/robot_system/install.log'
+[11.065s] Invoked command in '/home/drymer/ros2_ws/src/robot_system' returned '0': CMAKE_PREFIX_PATH=/home/drymer/ros2_ws/install/robot_interfaces:/home/drymer/ros2_ws/install/tutorial_interfaces:/home/drymer/ros2_ws/install/turtlesim:/home/drymer/ros2_ws/install/action_tutorials_interfaces LD_LIBRARY_PATH=/home/drymer/ros2_ws/install/robot_interfaces/lib:/home/drymer/ros2_ws/install/tutorial_interfaces/lib:/home/drymer/ros2_ws/install/turtlesim/lib:/home/drymer/ros2_ws/install/action_tutorials_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/drymer/ros2_ws/build/robot_system/prefix_override:/home/drymer/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/drymer/ros2_ws/install/robot_system/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_system build --build-base /home/drymer/ros2_ws/build/robot_system/build install --record /home/drymer/ros2_ws/build/robot_system/install.log --single-version-externally-managed install_data

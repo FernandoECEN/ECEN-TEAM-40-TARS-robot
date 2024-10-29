@@ -8,7 +8,7 @@ module robot_interfaces {
     struct VisionData {
       sequence<string> ai_detect_array;
 
-      sequence<double> distance_array;
+      sequence<float> distance_array;
     };
   };
 };

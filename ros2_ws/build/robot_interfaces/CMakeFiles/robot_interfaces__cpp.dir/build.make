@@ -82,6 +82,10 @@ CMakeFiles/robot_interfaces__cpp: rosidl_generator_cpp/robot_interfaces/msg/cont
 CMakeFiles/robot_interfaces__cpp: rosidl_generator_cpp/robot_interfaces/msg/detail/controller_command__builder.hpp
 CMakeFiles/robot_interfaces__cpp: rosidl_generator_cpp/robot_interfaces/msg/detail/controller_command__struct.hpp
 CMakeFiles/robot_interfaces__cpp: rosidl_generator_cpp/robot_interfaces/msg/detail/controller_command__traits.hpp
+CMakeFiles/robot_interfaces__cpp: rosidl_generator_cpp/robot_interfaces/msg/stereo_images.hpp
+CMakeFiles/robot_interfaces__cpp: rosidl_generator_cpp/robot_interfaces/msg/detail/stereo_images__builder.hpp
+CMakeFiles/robot_interfaces__cpp: rosidl_generator_cpp/robot_interfaces/msg/detail/stereo_images__struct.hpp
+CMakeFiles/robot_interfaces__cpp: rosidl_generator_cpp/robot_interfaces/msg/detail/stereo_images__traits.hpp
 
 rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -102,6 +106,7 @@ rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp: rosidl_adapter/rob
 rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp: rosidl_adapter/robot_interfaces/action/MotorControl.idl
 rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp: rosidl_adapter/robot_interfaces/msg/VisionData.idl
 rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp: rosidl_adapter/robot_interfaces/msg/ControllerCommand.idl
+rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp: rosidl_adapter/robot_interfaces/msg/StereoImages.idl
 rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
 rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
@@ -157,6 +162,18 @@ rosidl_generator_cpp/robot_interfaces/msg/detail/controller_command__struct.hpp:
 rosidl_generator_cpp/robot_interfaces/msg/detail/controller_command__traits.hpp: rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/robot_interfaces/msg/detail/controller_command__traits.hpp
 
+rosidl_generator_cpp/robot_interfaces/msg/stereo_images.hpp: rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/robot_interfaces/msg/stereo_images.hpp
+
+rosidl_generator_cpp/robot_interfaces/msg/detail/stereo_images__builder.hpp: rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/robot_interfaces/msg/detail/stereo_images__builder.hpp
+
+rosidl_generator_cpp/robot_interfaces/msg/detail/stereo_images__struct.hpp: rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/robot_interfaces/msg/detail/stereo_images__struct.hpp
+
+rosidl_generator_cpp/robot_interfaces/msg/detail/stereo_images__traits.hpp: rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/robot_interfaces/msg/detail/stereo_images__traits.hpp
+
 robot_interfaces__cpp: CMakeFiles/robot_interfaces__cpp
 robot_interfaces__cpp: rosidl_generator_cpp/robot_interfaces/action/detail/motor_control__builder.hpp
 robot_interfaces__cpp: rosidl_generator_cpp/robot_interfaces/action/detail/motor_control__struct.hpp
@@ -169,10 +186,14 @@ robot_interfaces__cpp: rosidl_generator_cpp/robot_interfaces/msg/detail/controll
 robot_interfaces__cpp: rosidl_generator_cpp/robot_interfaces/msg/detail/motor_feedback__builder.hpp
 robot_interfaces__cpp: rosidl_generator_cpp/robot_interfaces/msg/detail/motor_feedback__struct.hpp
 robot_interfaces__cpp: rosidl_generator_cpp/robot_interfaces/msg/detail/motor_feedback__traits.hpp
+robot_interfaces__cpp: rosidl_generator_cpp/robot_interfaces/msg/detail/stereo_images__builder.hpp
+robot_interfaces__cpp: rosidl_generator_cpp/robot_interfaces/msg/detail/stereo_images__struct.hpp
+robot_interfaces__cpp: rosidl_generator_cpp/robot_interfaces/msg/detail/stereo_images__traits.hpp
 robot_interfaces__cpp: rosidl_generator_cpp/robot_interfaces/msg/detail/vision_data__builder.hpp
 robot_interfaces__cpp: rosidl_generator_cpp/robot_interfaces/msg/detail/vision_data__struct.hpp
 robot_interfaces__cpp: rosidl_generator_cpp/robot_interfaces/msg/detail/vision_data__traits.hpp
 robot_interfaces__cpp: rosidl_generator_cpp/robot_interfaces/msg/motor_feedback.hpp
+robot_interfaces__cpp: rosidl_generator_cpp/robot_interfaces/msg/stereo_images.hpp
 robot_interfaces__cpp: rosidl_generator_cpp/robot_interfaces/msg/vision_data.hpp
 robot_interfaces__cpp: CMakeFiles/robot_interfaces__cpp.dir/build.make
 .PHONY : robot_interfaces__cpp

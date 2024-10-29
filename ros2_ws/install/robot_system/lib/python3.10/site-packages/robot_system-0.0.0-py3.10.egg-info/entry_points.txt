@@ -1,5 +1,6 @@
 [console_scripts]
 action = robot_system.motor_control_server:main
+camera = robot_system.camera_publisher:main
 client = robot_system.motor_control_client:main
 controller = robot_system.controller_publisher:main
 publisher = robot_system.vision_publisher:main
