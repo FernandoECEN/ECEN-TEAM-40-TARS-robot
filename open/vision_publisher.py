@@ -91,7 +91,7 @@ class VisionDataPublisher(Node):
         imax = np.unravel_index(disparity.argmax(), disparity.shape)
         
         # Extract the distance value of the closest point (Z-coordinate in 3D space)
-        self.distances = [proj[imax[0]][imax[1]][2] / 10]  # Convert to meters
+        self.distances = [proj[imax[0]][imax[1]][2] / 10]  # Convert to centimeters
 
         cv.imshow('frame', rectified_left)
         
