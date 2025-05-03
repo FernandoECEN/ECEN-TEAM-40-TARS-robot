@@ -2,6 +2,7 @@ import numpy as np
 import cv2 as cv
 from ultralytics import YOLO 
 import csv 
+import time
 
 # Main function that runs the object detection and CSV saving
 def main():
@@ -21,10 +22,7 @@ def main():
               ]
 
     # Load the exported TensorRT model
-    trt_model = YOLO("yolo11n.engine")
-
-    # Open the camera using GStreamer pipeline for the NVidia Jetson platform
-    cap = cv.VideoCapture("nvarguscamerasrc sensor-id=0 ! video/x-raw(memory:NVMM),width=1920, height=1080,framerate=30/1, format=NV12 ! nvvidconv flip-method=2 ! video/x-raw,format=BGRx, width=1920, height=1080, pixel-aspect-ratio=1/1 ! videoconvert ! video/x-raw,format=BGR ! appsink drop=1")
+    model = YOLO("yolo11n.pt")
 
     # Check if the camera opened successfully
     if True:
@@ -32,10 +30,11 @@ def main():
         # Continuously capture frames from the camera
         while True:
             # Read a frame from the video capture
-            ret_val, img = cap.read()
+            img = cv.imread('yolo-Data/yolo-Data.png')
 
             # Run the YOLO model on the current frame to get detection results
-            results = trt_model(img)
+            if img is not None:
+                 results = model(img)
             
             # Set detected array to empty array
             detected = []
@@ -51,6 +50,8 @@ def main():
 
             # Save the detection results to the CSV file
             save_list_to_csv(detected, csv_file_path)
+            
+            time.sleep(0.3)
             
     else:
         # Print an error message if the camera could not be opened

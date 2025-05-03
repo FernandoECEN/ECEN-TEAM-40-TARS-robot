@@ -1,0 +1,2 @@
+. install/setup.bash
+sudo docker run --mount type=bind,source="$(pwd)"/open,target=/home/drymer/open -it --ipc=host --runtime=nvidia

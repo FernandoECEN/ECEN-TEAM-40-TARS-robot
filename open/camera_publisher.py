@@ -6,7 +6,7 @@ from rclpy.node import Node
 import time
 from rectify import file2map
 
-from robot_interfaces.msg import StereoImages  # Importing the custom message type for stereo images
+from urobot_interfaces.msg import StereoImages  # Importing the custom message type for stereo images
 
 
 # Creating a ROS 2 node class for publishing stereo images
@@ -26,17 +26,19 @@ class ImagePublisher(Node):
         
         self.rmap1x, self.rmap1y, self.rmap2x, self.rmap2y, self.Q = file2map('camera_parameters', (10000, 2200))
 
-        # self.cam1 = cv.VideoCapture("nvarguscamerasrc sensor-id=0 ! video/x-raw(memory:NVMM),width=1920, height=1080,framerate=30/1, format=NV12 ! nvvidconv flip-method=2 ! queue max-size-buffers=1 leaky=downstream ! videoconvert ! video/x-raw,format=BGR ! appsink max-buffers=1 drop=True")  # Replace with actual camera URL or device index
-        # self.cam2 = cv.VideoCapture("nvarguscamerasrc sensor-id=1 ! video/x-raw(memory:NVMM),width=1920, height=1080,framerate=30/1, format=NV12 ! nvvidconv flip-method=2 ! queue max-size-buffers=1 leaky=downstream ! videoconvert ! video/x-raw,format=BGR ! appsink max-buffers=1 drop=True")  # Replace with actual camera URL or device index
+        self.cam1 = cv.VideoCapture("nvarguscamerasrc sensor-id=0 ! video/x-raw(memory:NVMM),width=1920, height=1080,framerate=30/1, format=NV12 ! nvvidconv flip-method=2 ! queue max-size-buffers=1 leaky=downstream ! videoconvert ! video/x-raw,format=BGR ! appsink max-buffers=1 drop=True")  # Replace with actual camera URL or device index
+        self.cam2 = cv.VideoCapture("nvarguscamerasrc sensor-id=1 ! video/x-raw(memory:NVMM),width=1920, height=1080,framerate=30/1, format=NV12 ! nvvidconv flip-method=2 ! queue max-size-buffers=1 leaky=downstream ! videoconvert ! video/x-raw,format=BGR ! appsink max-buffers=1 drop=True")  # Replace with actual camera URL or device index
 
     def camera_publish(self):
         # This callback gets triggered periodically based on the timer
         
-        # ret, imgL = self.cam1.read()  # Left camera image
-        # ret, imgR = self.cam2.read()  # Right camera image
+        ret, imgL = self.cam1.read()  # Left camera image
+        ret, imgR = self.cam2.read()  # Right camera image
         
-        imgL = cv.imread('frames_pair/camera0_0.png')
-        imgR = cv.imread('frames_pair/camera1_0.png')
+        # imgL = cv.imread('frames_pair/camera0_0.png')
+        # imgR = cv.imread('frames_pair/camera1_0.png')
+
+        cv.imwrite('yolo-Data/yolo-Data.png', imgL)
         
         imgL = cv.cvtColor(imgL, cv.COLOR_BGR2GRAY)
         imgR = cv.cvtColor(imgR, cv.COLOR_BGR2GRAY)

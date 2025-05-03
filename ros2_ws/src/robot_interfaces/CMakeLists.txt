@@ -32,6 +32,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/VisionData.msg"
   "msg/ControllerCommand.msg"
   "msg/StereoImages.msg"
+  "msg/MotorInterupt.msg"
 )
 
 ament_package()

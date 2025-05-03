@@ -3,7 +3,7 @@ import rclpy
 from rclpy.node import Node
 
 # Import the custom message type defined in the 'robot_interfaces' package
-from robot_interfaces.msg import ControllerCommand
+from urobot_interfaces.msg import ControllerCommand
 
 
 # Define the ControllerPublisher class which inherits from Node

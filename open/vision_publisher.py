@@ -7,7 +7,8 @@ from rectify import file2map
 import airead
 
 # Importing the VisionData message type from a custom robot interface package
-from robot_interfaces.msg import VisionData
+from urobot_interfaces.msg import VisionData
+from urobot_interfaces.msg import StereoImages
 
 # Define a class that will publish VisionData messages
 class VisionDataPublisher(Node):
@@ -19,9 +20,11 @@ class VisionDataPublisher(Node):
         # Create a publisher for the VisionData message on the 'vision_topic' topic
         self.publisher_ = self.create_publisher(VisionData, 'vision_topic', 1)
         
+        self.subscriber_ = self.create_subscription(StereoImages, 'image_topic', self.timer_callback, 1)
+        
         # Timer to trigger the timer_callback every 0.5 seconds
-        timer_period = 0.1  # seconds
-        self.timer = self.create_timer(timer_period, self.timer_callback)
+        # timer_period = 0.1  # seconds
+        # self.timer = self.create_timer(timer_period, self.timer_callback)
         
         # List of items detected by the vision system
         self.itemsdetected = []
@@ -31,10 +34,6 @@ class VisionDataPublisher(Node):
         
         # Retrieve rectification maps and stereo calibration parameters
         self.rmap1x, self.rmap1y, self.rmap2x, self.rmap2y, self.Q = file2map('camera_parameters', (10000, 2200))
-        
-        # Open two video capture objects for stereo vision
-        self.cam1 = cv.VideoCapture("nvarguscamerasrc sensor-id=0 ! video/x-raw(memory:NVMM),width=1920, height=1080,framerate=30/1, format=NV12 ! nvvidconv flip-method=2 ! queue max-size-buffers=1 leaky=downstream ! videoconvert ! video/x-raw,format=BGR ! appsink max-buffers=1 drop=True")  # Replace with actual camera URL or device index
-        self.cam2 = cv.VideoCapture("nvarguscamerasrc sensor-id=1 ! video/x-raw(memory:NVMM),width=1920, height=1080,framerate=30/1, format=NV12 ! nvvidconv flip-method=2 ! queue max-size-buffers=1 leaky=downstream ! videoconvert ! video/x-raw,format=BGR ! appsink max-buffers=1 drop=True")  # Replace with actual camera URL or device index
         
         # Stereo vision parameters for disparity map calculation
         self.minDisparity = 9
@@ -60,20 +59,12 @@ class VisionDataPublisher(Node):
         
     def timer_callback(self, msg):
         # Capture images from both cameras (left and right)
-        ret, imgL = self.cam1.read()  # Left camera image
-        ret, imgR = self.cam2.read()  # Right camera image
-
-        imgL = cv.cvtColor(imgL, cv.COLOR_BGR2GRAY)
-        imgR = cv.cvtColor(imgR, cv.COLOR_BGR2GRAY)
-
-        # Apply rectification to both images to correct for camera distortion
-        rectified_left = cv.remap(imgL, self.rmap1x, self.rmap1y, cv.INTER_AREA)
-        rectified_right = cv.remap(imgR, self.rmap2x, self.rmap2y, cv.INTER_AREA)
+        shape = msg.shape
         
-        # Resize rectified images to a smaller resolution (720x480)
-        newsize = (720, 480)
-        rectified_left = cv.resize(rectified_left, newsize, interpolation=cv.INTER_AREA)
-        rectified_right = cv.resize(rectified_right, newsize, interpolation=cv.INTER_AREA)
+        im1array = np.array(msg.cam1_image)
+        rectified_left = np.reshape(im1array, (shape[0],shape[1]))
+        im2array = np.array(msg.cam2_image)
+        rectified_right = np.reshape(im2array, (shape[0],shape[1]))
         
         # Compute the disparity map between the left and right images
         disparity = self.stereo.compute(rectified_left, rectified_right)
@@ -91,9 +82,7 @@ class VisionDataPublisher(Node):
         imax = np.unravel_index(disparity.argmax(), disparity.shape)
         
         # Extract the distance value of the closest point (Z-coordinate in 3D space)
-        self.distances = [proj[imax[0]][imax[1]][2] / 10]  # Convert to centimeters
-
-        cv.imshow('frame', rectified_left)
+        self.distances = [proj[imax[0]][imax[1]][2] / 10]  # Convert to meters\
         
         # Create a new VisionData message and populate it with detected items and distances
         visiondata = VisionData()
