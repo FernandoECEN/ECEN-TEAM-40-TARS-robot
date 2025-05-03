@@ -1,0 +1,6 @@
+int32[] moveorder
+---
+int32 exitcode
+---
+int32 motor1pos
+int32 motor2pos
